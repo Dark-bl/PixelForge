@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="./assets/pixelforge-logo-cyan.png" rel="icon" type="image/png"/>
+<title>PixelForge | Videojuegos, comunidad gamer y aprendizaje</title>
+<meta content="Explora videojuegos, organiza tu biblioteca, participa en la comunidad gamer de PixelForge y aprende programación y streaming con guías para principiantes." name="description"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="#0b0d14" name="theme-color"/>
+<link href="https://pixel-forge-gaming.netlify.app/" rel="canonical"/>
+<meta content="PixelForge" property="og:site_name"/>
+<meta content="PixelForge | Videojuegos, comunidad gamer y aprendizaje" property="og:title"/>
+<meta content="Explora videojuegos, organiza tu biblioteca, participa en la comunidad gamer de PixelForge y aprende programación y streaming con guías para principiantes." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://pixel-forge-gaming.netlify.app/" property="og:url"/>
+<meta content="es_MX" property="og:locale"/>
+<meta content="https://pixel-forge-gaming.netlify.app/assets/pixelforge-logo-cyan.png" property="og:image"/>
+<meta content="https://pixel-forge-gaming.netlify.app/assets/pixelforge-logo-cyan.png" property="og:image:secure_url"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1341" property="og:image:width"/>
+<meta content="373" property="og:image:height"/>
+<meta content="Logotipo de PixelForge en tonos cian y blanco" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="PixelForge | Videojuegos, comunidad gamer y aprendizaje" name="twitter:title"/>
+<meta content="Explora videojuegos, organiza tu biblioteca, participa en la comunidad gamer de PixelForge y aprende programación y streaming con guías para principiantes." name="twitter:description"/>
+<meta content="https://pixel-forge-gaming.netlify.app/assets/pixelforge-logo-cyan.png" name="twitter:image"/>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "PixelForge",
+      "alternateName": "Pixel Forge",
+      "url": "https://pixel-forge-gaming.netlify.app/",
+      "description": "Explora videojuegos, organiza tu biblioteca, participa en la comunidad gamer de PixelForge y aprende programación y streaming con guías para principiantes.",
+      "inLanguage": "es-MX"
+    }
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link href="./style.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Silkscreen:wght@400;700&amp;display=swap" rel="stylesheet"/>
+
+
+
+
+
+</head>
+<body><div class="pf-app-shell" id="pfAppShell"><header class="pf-header">
+<a aria-label="PixelForge, ir al inicio" class="pf-brand" href="#inicio">
+<img alt="PIXEL FORGE" class="pf-brand-logo" src="./assets/pixelforge-logo-cyan.png"/>
+</a>
+<div class="pf-navigation-area">
+<button aria-controls="pfMainNav" aria-expanded="false" class="pf-menu-toggle" id="pfMenuToggle" type="button">
+<span aria-hidden="true" class="pf-menu-toggle-icon"><i></i><i></i><i></i></span>
+<span>MENÚ</span>
+</button>
+<nav aria-label="Navegación principal" class="pf-main-nav" id="pfMainNav">
+<a aria-current="page" href="#inicio">Inicio</a>
+<a href="#juegos">Juegos</a>
+<a href="#aprendizaje">Aprender</a>
+<a href="#comunidad">Comunidad</a>
+<a class="pf-menu-extra" href="#biblioteca" id="pfAccountMainLink">Cuentas y biblioteca</a>
+<a class="pf-menu-extra pf-profile-nav" href="#perfil" id="pfProfileNavLink">Mi perfil</a>
+<a class="pf-menu-extra" href="#proponer">Proponer</a>
+<a class="pf-menu-extra" href="#kids">Zona infantil</a>
+<a class="pf-menu-extra" href="#musica">Música</a>
+<a class="pf-menu-extra" href="#streamers">Streams</a>
+<a class="pf-menu-extra" href="#creadores">Creadores</a>
+<a class="pf-menu-extra" href="#reportes">Reportes</a>
+<a class="pf-menu-extra" href="#contactos">Contacto</a>
+<a class="pf-menu-extra" hidden="" href="#administracion" id="pfAdminNavLink">Administración</a>
+</nav>
+</div>
+</header><main>
+<section class="portada" id="inicio">
+<p class="etiqueta">BIENVENIDO AL MUNDO GAMER</p>
+<h1>DESCUBRE TU<br/>PRÓXIMA AVENTURA</h1>
+<p>Explora videojuegos, conoce nuevos mundos y encuentra tus favoritos.</p>
+<a class="boton" href="#juegos">EXPLORAR JUEGOS</a>
+</section>
+<section class="seccion comunidad-destacada" id="comunidad-destacada">
+<h2>Lo más reciente de la comunidad</h2>
+<p class="descripcion">Descubre lo que comparten otros jugadores y entra a la comunidad para publicar o participar.</p>
+<div class="lista-publicaciones pf-vista-previa" id="vistaPreviaPublicaciones">
+<p>Las publicaciones recientes aparecerán aquí cuando se cargue la comunidad.</p>
+</div>
+<a class="boton" href="#comunidad">Ver toda la comunidad</a>
+</section>
+<section class="seccion" id="juegos">
+<h2>Catálogo de videojuegos</h2>
+<p class="descripcion">Explora los juegos destacados y los videojuegos que la comunidad proponga y la administración apruebe. Las edades sugeridas son orientativas; consulta siempre la clasificación oficial de cada juego.</p>
+<div class="barra-herramientas-juegos">
+<label class="sr-only" for="buscadorJuegos">Buscar videojuego</label>
+<input autocomplete="off" id="buscadorJuegos" placeholder="Buscar un videojuego..." type="search"/>
+<button aria-pressed="false" class="boton boton-secundario" id="mostrarFavoritos" type="button">☆ Ver favoritos</button>
+</div>
+<div class="pestanas-catalogo" role="tablist">
+<button class="pestana-btn activa" id="tabTodosJuegos" type="button">🎮 Catálogo General</button>
+<button class="pestana-btn" id="tabApiJuegos" type="button">🌐 Explorar APIs de videojuegos</button>
+<button class="pestana-btn" id="tabComunidadJuegos" type="button">👥 Propuestos por la comunidad</button>
+</div>
+<div hidden="" id="seccionApiJuegos">
+<div class="pf-api-heading">
+<h3 class="subtitulo-catalogo">Videojuegos de API externas</h3>
+<p class="descripcion">Explora información de videojuegos publicada por proveedores externos. Los enlaces llevan a la fuente original.</p>
+</div>
+<div aria-live="polite" class="catalogo-dinamico" id="contenedorApiJuegos">
+<p class="mensaje-catalogo-vacio">Cargando videojuegos desde la API...</p>
+</div>
+</div>
+<div id="seccionCatalogoGeneral">
+<p class="pf-catalog-note">Usa el buscador para encontrar videojuegos por nombre.</p>
+<h3 class="subtitulo-catalogo">Juegos aprobados por la comunidad</h3>
+<div aria-live="polite" class="catalogo-dinamico" id="catalogoDinamico">
+<p class="mensaje-catalogo-vacio">Los juegos aprobados por la administración aparecerán aquí. Mientras tanto, puedes explorar los juegos destacados.</p>
+</div>
+<h3 class="subtitulo-catalogo">Juegos destacados</h3>
+<div class="contenedor-juegos" id="contenedorJuegos">
+<article class="juego" data-edad="7+" data-genero="Supervivencia" data-juego="minecraft">
+<div class="imagen-juego-contenedor">
+<img alt="Minecraft" loading="lazy" src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?w=600&amp;auto=format&amp;fit=crop&amp;q=80"/>
+</div>
+<div class="informacion">
+<span>SANDBOX / SUPERVIVENCIA</span>
+<h3>Minecraft</h3>
+<p>Construye, explora y sobrevive en un mundo infinito de bloques creado proceduralmente.</p>
+<a href="https://www.minecraft.net" rel="noopener noreferrer" target="_blank">Página oficial</a>
+<button aria-pressed="false" class="boton-favorito" data-favorito="minecraft" type="button">☆ Añadir a favoritos</button>
+</div>
+</article>
+<article class="juego" data-edad="12+" data-genero="Battle royale" data-juego="fortnite">
+<div class="imagen-juego-contenedor">
+<img alt="Fortnite" loading="lazy" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&amp;auto=format&amp;fit=crop&amp;q=80"/>
+</div>
+<div class="informacion">
+<span>BATTLE ROYALE / DISPAROS</span>
+<h3>Fortnite</h3>
+<p>Compite con hasta 100 jugadores, construye defensas y sé el último superviviente en pie.</p>
+<a href="https://www.fortnite.com" rel="noopener noreferrer" target="_blank">Página oficial</a>
+<button aria-pressed="false" class="boton-favorito" data-favorito="fortnite" type="button">☆ Añadir a favoritos</button>
+</div>
+</article>
+<article class="juego" data-edad="18+" data-genero="Acción" data-juego="gta-v">
+<div class="imagen-juego-contenedor">
+<img alt="Grand Theft Auto V" loading="lazy" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&amp;auto=format&amp;fit=crop&amp;q=80"/>
+</div>
+<div class="informacion">
+<span>ACCIÓN / MUNDO ABIERTO</span>
+<h3>Grand Theft Auto V</h3>
+<p>Vive las historias entrelazadas de tres criminales en la metrópolis de Los Santos.</p>
+<a href="https://www.rockstargames.com/gta-v" rel="noopener noreferrer" target="_blank">Página oficial</a>
+<button aria-pressed="false" class="boton-favorito" data-favorito="gta-v" type="button">☆ Añadir a favoritos</button>
+</div>
+</article>
+</div>
+<p aria-live="polite" class="mensaje-secundario" id="mensajeBusqueda"></p>
+<p class="nota-clasificacion">Las edades de PixelForge son recomendaciones generales, no sustituyen las clasificaciones oficiales ESRB/PEGI ni la supervisión familiar.</p>
+</div><!-- cierre de seccionCatalogoGeneral -->
+</section>
+<section class="seccion pf-profile-section" id="perfil">
+<div class="pf-profile-heading">
+<div><p class="etiqueta">IDENTIDAD PLAYER</p><h2>Mi perfil</h2><p class="descripcion">Personaliza cómo te ve la comunidad de PixelForge.</p></div>
+<div aria-label="Vista previa de foto de perfil" class="pf-profile-avatar" id="pfProfileAvatarPreview">PF</div>
+</div>
+<div class="panel-pixel pf-profile-panel">
+<form class="pf-profile-form" id="pfProfileForm">
+<div class="pf-profile-grid">
+<div><label for="pfProfileName">Nombre visible</label><input id="pfProfileName" maxlength="40" name="display_name" placeholder="Tu nombre gamer" required=""/></div>
+<div><label for="pfProfileUsername">Nombre de usuario</label><input id="pfProfileUsername" maxlength="24" name="username" placeholder="player_01"/></div>
+<div><label>Estatus de cuenta</label><p aria-live="polite" class="pf-profile-account-status" id="pfProfileStatus">Usuario</p></div>
+<div class="pf-profile-full"><label for="pfProfileAvatar">URL de foto de perfil</label><input id="pfProfileAvatar" name="avatar_url" placeholder="https://..." type="url"/><small>Usa un enlace directo a una imagen pública.</small></div>
+<div class="pf-profile-full"><label for="pfProfileBio">Descripción</label><textarea id="pfProfileBio" maxlength="180" name="bio" placeholder="Cuéntale a la comunidad qué juegos te gustan..." rows="4"></textarea><small>Máximo 180 caracteres.</small></div>
+</div>
+<div class="pf-profile-actions"><button class="boton" type="submit">Guardar cambios</button><a class="boton boton-secundario" href="#biblioteca">Volver a mi biblioteca</a></div>
+<p aria-live="polite" id="pfProfileMessage"></p>
+</form>
+</div>
+</section>
+<section class="seccion biblioteca-seccion" id="biblioteca">
+<h2>Mi biblioteca</h2>
+<p class="descripcion">Organiza tus videojuegos, registra tu progreso, califica y guarda tus observaciones.</p>
+<div class="panel-pixel" id="zonaAcceso">
+<h3>Inicia sesión o crea tu cuenta</h3>
+<div class="aviso-correo-ayuda">
+<strong>⚡ Sin esperas de confirmación:</strong> Al crear tu cuenta aquí, PixelForge activa tu sesión de inmediato sin obligarte a confirmar correo electrónico. Puedes gestionar y guardar videojuegos al instante.
+                </div>
+<form id="formAcceso">
+<label for="correo">Correo electrónico</label>
+<input autocomplete="email" id="correo" placeholder="user@correo.com" required="" type="email"/>
+<label for="clave">Contraseña</label>
+<div class="campo-password">
+<input autocomplete="current-password" id="clave" minlength="8" placeholder="Mínimo 8 caracteres" required="" type="password"/>
+<button aria-controls="clave" aria-pressed="false" class="boton-secundario" id="alternarClave" type="button">
+                            Mostrar
+                        </button>
+</div>
+<div class="acciones-formulario">
+<button class="boton" type="submit">Iniciar sesión</button>
+<button class="boton boton-secundario" id="crearCuenta" type="button">Crear cuenta</button>
+<button class="boton boton-secundario" id="modoInvitado" type="button">Probar en modo local (sin cuenta)</button>
+</div>
+</form>
+<p aria-live="polite" id="mensajeAcceso"></p>
+</div>
+<div class="panel-pixel" hidden="" id="zonaBiblioteca">
+<p>Sesión iniciada: <strong id="correoUsuario"></strong></p>
+<button class="boton boton-secundario" id="cerrarSesion" type="button">Cerrar sesión</button>
+<hr/>
+<h3 id="tituloFormularioJuego">Agregar videojuego</h3>
+<form id="formJuego">
+<label for="nombreJuego">Nombre del videojuego</label>
+<input id="nombreJuego" maxlength="100" required="" type="text"/>
+<label for="plataforma">Plataforma</label>
+<select id="plataforma">
+<option>PC</option>
+<option>PlayStation</option>
+<option>Xbox</option>
+<option>Nintendo Switch</option>
+<option>Móvil</option>
+<option>Otra</option>
+</select>
+<label for="generoJuego">Género</label>
+<select id="generoJuego">
+<option>Otro</option>
+<option>Acción</option>
+<option>Aventura</option>
+<option>Carreras</option>
+<option>Estrategia</option>
+<option>Rol</option>
+<option>Simulación</option>
+<option>Supervivencia</option>
+<option>Deportes</option>
+</select>
+<label for="estadoJuego">Estado</label>
+<select id="estadoJuego">
+<option>Pendiente</option>
+<option>Jugando</option>
+<option>Completado</option>
+<option>En pausa</option>
+</select>
+<label for="valoracionJuego">Calificación (0 a 5)</label>
+<select id="valoracionJuego">
+<option value="0">Sin calificar</option>
+<option value="1">1 de 5</option>
+<option value="2">2 de 5</option>
+<option value="3">3 de 5</option>
+<option value="4">4 de 5</option>
+<option value="5">5 de 5</option>
+</select>
+<label for="notasJuego">Observaciones</label>
+<textarea id="notasJuego" maxlength="1000" placeholder="Tu progreso o comentarios" rows="3"></textarea>
+<div class="acciones-formulario">
+<button class="boton" id="guardarJuego" type="submit">Guardar videojuego</button>
+<button class="boton boton-secundario" hidden="" id="cancelarEdicion" type="button">Cancelar edición</button>
+</div>
+</form>
+<p aria-live="polite" id="mensajeJuego"></p>
+<h3>Mis videojuegos guardados</h3>
+<div class="lista-juegos" id="listaJuegos"></div>
+</div>
+</section>
+<section class="seccion zona-infantil" id="kids">
+<p class="etiqueta">PIXELFORGE KIDS</p>
+<h2>Zona infantil</h2>
+<p class="descripcion">Una selección familiar y sencilla. Revisa siempre la clasificación oficial antes de jugar.</p>
+<div class="kids-intro">
+<strong>Consejo para familias:</strong> usa límites de tiempo y supervisión adecuada a la edad. Los juegos en línea pueden incluir comunicación o contenido creado por otras personas.
+            </div>
+<div class="catalogo-dinamico" id="catalogoInfantil"></div>
+</section>
+<section class="seccion" id="proponer">
+<h2>Propón un videojuego</h2>
+<p class="descripcion">Cualquier visitante puede proponer un videojuego. Las propuestas se revisan antes de aparecer en el catálogo.</p>
+<div class="pf-creator-callout"><p><strong>¿El videojuego es tuyo o también haces streams?</strong> Si quieres que te evaluemos como posible colaborador emergente, completa el Centro de Creadores; ahí podrás indicar tu experiencia previa, tus enlaces y solicitar permiso para aparecer en streams.</p><a class="boton boton-secundario" href="#creadores">Ir al Centro de Creadores</a></div>
+<div class="panel-pixel">
+<form id="formPropuestaJuego">
+<label for="propuestaNombre">Nombre del videojuego</label>
+<input id="propuestaNombre" maxlength="100" name="nombre" placeholder="Ej. Mi videojuego favorito" required=""/>
+<label for="propuestaGenero">Categoría o género</label>
+<select id="propuestaGenero" name="genero" required="">
+<option value="Acción">Acción</option><option value="Aventura">Aventura</option><option value="Carreras">Carreras</option>
+<option value="Estrategia">Estrategia</option><option value="RPG">RPG</option><option value="Simulación">Simulación</option>
+<option value="Supervivencia">Supervivencia</option><option value="Terror">Terror</option><option value="Deportes">Deportes</option>
+<option value="Cooperativo">Cooperativo</option><option value="Familiar">Familiar</option><option value="Otro">Otro</option>
+</select>
+<label for="propuestaEdad">Edad sugerida (orientativa)</label>
+<select id="propuestaEdad" name="edad" required="">
+<option>3+</option><option>7+</option><option>10+</option><option>12+</option><option>16+</option><option>18+</option><option>Pendiente de verificar</option>
+</select>
+<label for="propuestaUrl">Página oficial o tienda del juego</label>
+<input id="propuestaUrl" name="sitio_oficial" placeholder="https://..." required="" type="url"/>
+<label for="propuestaImagen">Enlace de la imagen (opcional)</label>
+<input id="propuestaImagen" name="imagen_url" placeholder="https://..." type="url"/>
+<label for="propuestaStreamers">Streamers o creadores relacionados (opcional)</label>
+<input id="propuestaStreamers" maxlength="250" name="streamers" placeholder="Nombres separados por comas"/>
+<label for="propuestaDescripcion">Descripción breve</label>
+<textarea id="propuestaDescripcion" maxlength="500" name="descripcion" placeholder="¿Qué hace interesante a este juego?" rows="3"></textarea>
+<button class="boton" id="enviarPropuesta" type="submit">Enviar propuesta</button>
+</form>
+<p aria-live="polite" id="mensajePropuesta"></p>
+</div>
+<p aria-live="polite" id="pfEstadoAdmin">Inicia sesión con la cuenta habilitada como administradora para revisar el estado del permiso.</p>
+<div class="panel-pixel" hidden="" id="zonaModeracionCatalogo">
+<h3>Revisar propuestas pendientes (administración)</h3>
+<p>Esta sección solo aparece para la cuenta que se habilite como administradora desde Supabase.</p>
+<div class="lista-publicaciones" id="listaPropuestasPendientes"></div>
+<hr class="pf-admin-separador"/>
+<h3>Administrar catálogo de videojuegos</h3>
+<p>Desde aquí puedes agregar, editar, publicar u ocultar juegos directamente en Supabase. Solo aparece para la cuenta administradora.</p>
+<form class="pf-editor-catalogo" id="pfEditorCatalogoForm">
+<label for="pfEditorSlug">Identificador (slug)</label>
+<input autocomplete="off" id="pfEditorSlug" maxlength="90" placeholder="ej. mi-videojuego"/>
+<label for="pfEditorNombre">Nombre del videojuego</label>
+<input id="pfEditorNombre" maxlength="100" placeholder="Nombre del juego" required=""/>
+<label for="pfEditorGenero">Categoría</label>
+<select id="pfEditorGenero" required="">
+<option>Acción</option><option>Disparos</option><option>MOBA</option><option>Battle royale</option><option>Aventura</option><option>RPG</option><option>Estrategia</option><option>Supervivencia</option><option>Carreras</option><option>Deportes</option><option>Simulación</option><option>Terror</option><option>Sandbox</option><option>Cooperativo</option><option>Familiar</option><option>Indie</option><option>Otro</option>
+</select>
+<label for="pfEditorEdad">Clasificación orientativa</label>
+<select id="pfEditorEdad" required=""><option>3+</option><option>7+</option><option>10+</option><option>12+</option><option>16+</option><option>18+</option><option>Pendiente de verificar</option></select>
+<label for="pfEditorUrl">Sitio oficial (HTTPS)</label>
+<input id="pfEditorUrl" placeholder="https://..." required="" type="url"/>
+<label for="pfEditorImagen">Imagen (HTTPS, opcional)</label>
+<input id="pfEditorImagen" placeholder="https://..." type="url"/>
+<label for="pfEditorStreamers">Streamers (opcional)</label>
+<input id="pfEditorStreamers" maxlength="250" placeholder="Nombres separados por comas"/>
+<label for="pfEditorDescripcion">Descripción (opcional)</label>
+<textarea id="pfEditorDescripcion" maxlength="1000" placeholder="Descripción del videojuego" rows="3"></textarea>
+<label for="pfEditorReqMin">Requisitos mínimos de PC (opcional)</label>
+<textarea id="pfEditorReqMin" maxlength="1200" placeholder="SO, procesador, RAM, gráfica y almacenamiento" rows="3"></textarea>
+<label for="pfEditorReqRec">Requisitos recomendados de PC (opcional)</label>
+<textarea id="pfEditorReqRec" maxlength="1200" placeholder="Requisitos recomendados verificados" rows="3"></textarea>
+<label class="pf-check"><input id="pfEditorInfantil" type="checkbox"/> Incluir en zona infantil (solo tras revisar clasificación)</label>
+<label class="pf-check"><input checked="" id="pfEditorAprobado" type="checkbox"/> Publicar en el catálogo</label>
+<div class="acciones-formulario"><button class="boton" id="pfEditorGuardar" type="submit">Guardar juego</button><button class="boton boton-secundario" id="pfEditorNuevo" type="button">Nuevo</button><button class="boton boton-secundario" id="pfEditorCancelar" type="button">Cancelar edición</button></div>
+</form>
+<p aria-live="polite" id="pfEditorMensaje"></p>
+<h4>Juegos guardados en la base de datos</h4>
+<div class="lista-publicaciones" id="pfEditorListaCatalogo"></div>
+</div>
+</section>
+<section class="seccion musica-seccion" id="musica">
+<h2>Música de videojuegos</h2>
+<p class="descripcion">Escucha bandas sonoras legendarias conectadas a la API oficial de música en tiempo real y disfruta de temas retro chiptune.</p>
+<article class="panel-radio-videojuegos" id="radioVideojuegos">
+<div class="encabezado-radio-videojuegos">
+<div>
+<p class="etiqueta-radio">PIXELFORGE MUSIC &amp; OST API</p>
+<h3>Jukebox Gamer &amp; API de Música</h3>
+<p>Busca cualquier videojuego o compositor y reprodúcelo al instante.</p>
+</div>
+<div aria-hidden="true" class="onda-sonido" id="ondaEcualizador">
+<span class="onda-barra"></span>
+<span class="onda-barra"></span>
+<span class="onda-barra"></span>
+<span class="onda-barra"></span>
+</div>
+</div>
+<!-- Buscador de la API de música -->
+<div class="barra-busqueda-musica">
+<input autocomplete="off" id="inputBusquedaMusicaApi" placeholder="Buscar canciones en la API (ej: K/DA, LE SSERAFIM, Zelda, Minecraft, Cyberpunk...)" type="search"/>
+<button class="boton" id="btnBuscarMusicaApi" type="button">Buscar en la API</button>
+<button class="boton" id="btnApiKpopGaming" style="background: linear-gradient(135deg, #ff2d75, #7928ca); border-color:#ff2d75; color:#fff;" type="button">🇰🇷 API K-Pop Gamer</button>
+<button class="boton boton-secundario" id="btnColeccionLocalMusica" type="button">Pistas clásicas</button>
+</div>
+<!-- Chips de géneros y sagas populares -->
+<div class="chips-musica-api" id="chipsMusica">
+<button class="chip-musica-btn" data-query="K/DA League of Legends" type="button">✨ K/DA (League of Legends)</button>
+<button class="chip-musica-btn" data-query="LE SSERAFIM Perfect Night Overwatch" type="button">🌸 LE SSERAFIM (Overwatch 2)</button>
+<button class="chip-musica-btn" data-query="League of Legends NewJeans" type="button">🐰 NewJeans (Worlds LoL)</button>
+<button class="chip-musica-btn" data-query="BLACKPINK Ready For Love PUBG" type="button">🖤 BLACKPINK (PUBG)</button>
+<button class="chip-musica-btn" data-query="efootball soundtrack" type="button">⚽ eFootball (Konami)</button>
+<button class="chip-musica-btn" data-query="zelda soundtrack" type="button">⚔️ The Legend of Zelda</button>
+<button class="chip-musica-btn" data-query="super mario soundtrack" type="button">🍄 Super Mario</button>
+<button class="chip-musica-btn" data-query="minecraft c418" type="button">⛏️ Minecraft</button>
+<button class="chip-musica-btn" data-query="cyberpunk 2077 soundtrack" type="button">🦾 Cyberpunk</button>
+<button class="chip-musica-btn" data-query="halo soundtrack" type="button">🌌 Halo</button>
+<button class="chip-musica-btn" data-query="doom mick gordon" type="button">🔥 Doom</button>
+<button class="chip-musica-btn" data-query="chiptune 8-bit game" type="button">🕹️ 8-Bit Retro</button>
+</div>
+<div class="reproductor-gamer-contenedor">
+<div class="caratula-disco" id="caratulaAudioContenedor">
+<img alt="Carátula de música" id="caratulaAudioImg" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&amp;auto=format&amp;fit=crop&amp;q=80"/>
+</div>
+<div class="reproductor-info-columna">
+<div class="datos-radio-videojuegos" style="margin-top:0;">
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+<p class="estado-radio" id="estadoGamer" style="margin:0;">Listo para reproducir</p>
+<span class="badge-fuente-musica" id="badgeOrigenMusica">COLECCIÓN LOCAL</span>
+</div>
+<h4 id="tituloTemaGamer" style="font-size:1.35rem; color:#00e5ff; margin-top:6px;">Battle Boss (Tema de Jefe Final)</h4>
+<p id="artistaTemaGamer">Artista: BoxCat Games</p>
+<p id="albumTemaGamer">Banda Sonora: Nameless RPG / Boss Battle</p>
+</div>
+<!-- Barra de progreso -->
+<div class="barra-progreso-contenedor">
+<span class="tiempo-audio" id="tiempoActualAudio">0:00</span>
+<input aria-label="Progreso de la canción" id="barraProgresoAudio" max="100" min="0" type="range" value="0"/>
+<span class="tiempo-audio" id="tiempoTotalAudio">0:53</span>
+</div>
+<!-- Controles -->
+<div class="controles-reproductor">
+<button aria-label="Canción anterior" class="btn-ctrl" id="btnAudioPrev" title="Canción anterior" type="button">⏮</button>
+<button aria-label="Reproducir música" class="btn-ctrl btn-ctrl-play" id="btnAudioPlay" title="Reproducir / Pausa" type="button">▶</button>
+<button aria-label="Siguiente canción" class="btn-ctrl" id="btnAudioNext" title="Siguiente canción" type="button">⏭</button>
+<div style="display:flex; align-items:center; gap:8px; margin-left:auto;">
+<span aria-hidden="true" style="font-size:1.1rem;">🔊</span>
+<input aria-label="Control de volumen" id="volumenAudio" max="100" min="0" style="width:90px; accent-color:#00e5ff;" type="range" value="80"/>
+</div>
+</div>
+<audio id="audioGamer" preload="none"></audio>
+<!-- Selector de canciones -->
+<div style="margin-top:16px;">
+<strong id="tituloListaPistas" style="font-size:0.92rem; color:#d2dff5;">Pistas disponibles:</strong>
+<div class="selector-pistas-audio" id="listaPistasAudio"></div>
+</div>
+</div>
+</div>
+</article>
+</section>
+<section class="seccion comunidad-seccion" id="comunidad">
+<h2>Comunidad PixelForge</h2>
+<p class="descripcion">Comparte tus recomendaciones, opiniones y experiencias gamer.</p>
+<div class="panel-pixel">
+<h3>Crear una publicación</h3>
+<form id="formPublicacion">
+<label for="tituloPublicacion">Título</label>
+<input id="tituloPublicacion" maxlength="80" placeholder="Ej. Mi videojuego favorito" required="" type="text"/>
+<label for="textoPublicacion">Tu publicación</label>
+<textarea id="textoPublicacion" maxlength="500" placeholder="Comparte lo que piensas..." required="" rows="4"></textarea>
+<button class="boton" type="submit">Publicar</button>
+</form>
+<p aria-live="polite" id="mensajeComunidad"></p>
+<hr/>
+<h3>Publicaciones de la comunidad</h3>
+<div class="lista-publicaciones" id="listaPublicaciones"></div>
+</div>
+</section>
+<section class="seccion pf-v9-section" id="streamers">
+<p class="etiqueta">COMUNIDAD EN DIRECTO</p>
+<h2>Streams y streamers</h2>
+<p class="descripcion">Carga un canal de Twitch en la página o abre directorios de transmisiones. La reproducción depende de que el canal esté disponible y de la configuración de Twitch.</p>
+<div class="panel-pixel pf-v9-panel">
+<form class="pf-v9-form" id="pfV9StreamForm">
+<label for="pfV9Channel">Nombre del canal de Twitch</label>
+<input id="pfV9Channel" maxlength="60" name="channel" pattern="[A-Za-z0-9_]{1,60}" placeholder="Ej. twitchgaming" required=""/>
+<div class="pf-v9-actions">
+<button class="boton" type="submit">Cargar stream aquí</button>
+<button class="boton boton-secundario" id="pfV9Search" type="button">Buscar canales</button>
+</div>
+<p aria-live="polite" class="pf-v9-status" id="pfV9StreamStatus" role="status">Para que Twitch funcione, abre la página desde Live Server o un dominio web.</p>
+</form>
+<div aria-label="Reproductor de Twitch" class="pf-v9-player" id="pfV9Player"></div>
+</div>
+<div class="pf-v9-stream-links">
+<a class="pf-v9-link-card" href="https://www.twitch.tv/directory/category/minecraft" rel="noopener noreferrer" target="_blank"><strong>Minecraft</strong><span>Buscar directos ↗</span></a>
+<a class="pf-v9-link-card" href="https://www.twitch.tv/directory/category/fortnite" rel="noopener noreferrer" target="_blank"><strong>Fortnite</strong><span>Buscar directos ↗</span></a>
+<a class="pf-v9-link-card" href="https://www.twitch.tv/directory/category/valorant" rel="noopener noreferrer" target="_blank"><strong>VALORANT</strong><span>Buscar directos ↗</span></a>
+<a class="pf-v9-link-card" href="https://www.youtube.com/gaming" rel="noopener noreferrer" target="_blank"><strong>YouTube Gaming</strong><span>Explorar contenido ↗</span></a>
+</div>
+</section>
+<section class="seccion pf-v9-section" id="creadores">
+<p class="etiqueta">PIXELFORGE CREATOR HUB</p>
+<h2>Creadores emergentes y colaboradores</h2>
+<p class="descripcion">¿Desarrollaste un videojuego, haces streams o estás empezando? Envíanos tu perfil para valorar una colaboración. Las solicitudes quedan pendientes de revisión; enviar este formulario no garantiza publicación ni colaboración.</p>
+<div class="pf-creator-grid">
+<article class="panel-pixel pf-v9-panel pf-creator-guides">
+<h3>Conceptos y reglas para empezar</h3>
+<p><strong>Si es tu primera vez, puedes comenzar así:</strong></p>
+<ol>
+<li>Elige un enfoque: desarrollo de videojuegos, retransmisiones o ambos.</li>
+<li>Prepara una descripción breve, una idea propia y enlaces de referencia seguros.</li>
+<li>Respeta los derechos de autor: usa juegos, música, imágenes y recursos que tengas permitido mostrar.</li>
+<li>En streams, mantén un trato respetuoso, indica contenido sensible y evita acoso, discriminación, trampas, fraude o material ilegal.</li>
+<li>No publiques datos privados tuyos ni de otras personas. Si eres menor, solicita la autorización de tu madre, padre o tutor antes de enviar datos o participar.</li>
+<li>PixelForge revisará calidad, seguridad y adecuación antes de presentar una propuesta o retransmisión.</li>
+</ol>
+<div class="pf-fee-box">
+<span>Cuota de recuperación propuesta</span>
+<strong id="pfCreatorFeeLabel">$50 MXN</strong>
+<p>Es una cuota sugerida y configurable. No se cobra en este formulario. Solo se solicitaría después de revisar y aceptar la solicitud, con el concepto y método de pago informados previamente.</p>
+</div>
+<p class="pf-v9-status">La primera etapa de evaluación es manual. No compartas contraseñas, tokens de transmisión ni claves privadas.</p>
+</article>
+<article class="panel-pixel pf-v9-panel">
+<h3>Solicitud de creador o colaborador</h3>
+<form class="pf-v9-form" id="pfCreatorForm">
+<label for="pfCreatorName">Nombre o nombre público</label>
+<input id="pfCreatorName" maxlength="100" placeholder="Nombre o alias público" required=""/>
+<label for="pfCreatorAlias">Alias de creador</label>
+<input id="pfCreatorAlias" maxlength="60" placeholder="Tu nombre en la comunidad" required=""/>
+<label for="pfCreatorEmail">Correo de contacto</label>
+<input id="pfCreatorEmail" maxlength="160" placeholder="tucorreo@ejemplo.com" required="" type="email"/>
+<label for="pfCreatorRole">¿Qué quieres hacer en PixelForge?</label>
+<select id="pfCreatorRole" required="">
+<option value="desarrollador">Proponer o mostrar un videojuego propio</option>
+<option value="streamer">Solicitar aparecer con mis streams</option>
+<option value="ambos">Ambas cosas: juego y streams</option>
+</select>
+<label for="pfCreatorIdeaName">Nombre del videojuego o idea que deseas proponer (opcional)</label>
+<input id="pfCreatorIdeaName" maxlength="120" placeholder="Nombre del juego o concepto inicial"/>
+<label for="pfCreatorIdeaConcept">¿De qué trata tu videojuego o propuesta?</label>
+<textarea id="pfCreatorIdeaConcept" maxlength="1500" placeholder="Idea, mecánicas, público al que va dirigido o qué lo hace diferente." rows="3"></textarea>
+<label for="pfCreatorHasGame">¿Ya creaste algún videojuego?</label>
+<select id="pfCreatorHasGame" required=""><option value="no">No, sería mi primera vez</option><option value="si">Sí, ya desarrollé uno</option><option value="en_proceso">Estoy desarrollándolo</option></select>
+<div class="pf-conditional" hidden="" id="pfCreatorGameDetails">
+<label for="pfCreatorGameName">Nombre del videojuego</label>
+<input id="pfCreatorGameName" maxlength="120" placeholder="Nombre del proyecto"/>
+<label for="pfCreatorGameLink">Enlace a demo, tienda, portafolio o página del juego</label>
+<input id="pfCreatorGameLink" maxlength="500" placeholder="https://..." type="url"/>
+<label for="pfCreatorGameDetailsText">Tu participación y estado del proyecto</label>
+<textarea id="pfCreatorGameDetailsText" maxlength="1500" placeholder="Rol, motor utilizado, demo disponible, estado... " rows="3"></textarea>
+</div>
+<label for="pfCreatorHasStreamed">¿Ya hiciste streams antes?</label>
+<select id="pfCreatorHasStreamed" required=""><option value="no">No, sería mi primera vez</option><option value="si">Sí, ya he transmitido</option></select>
+<div class="pf-first-timer-notice" id="pfCreatorBeginnerNotice"><strong>Ruta para principiantes:</strong> revisa los conceptos y reglas de la columna de la izquierda. Puedes comenzar con una idea pequeña, una demo corta o un stream de prueba; no necesitas tener una audiencia grande para solicitar evaluación.</div>
+<div class="pf-conditional" hidden="" id="pfCreatorStreamDetails">
+<label for="pfCreatorPlatform">Plataforma donde haces streams</label>
+<select id="pfCreatorPlatform"><option value="Twitch">Twitch</option><option value="YouTube">YouTube</option><option value="TikTok Live">TikTok Live</option><option value="Otra">Otra</option></select>
+<label for="pfCreatorStreamLink">Enlace a tu canal/perfil</label>
+<input id="pfCreatorStreamLink" maxlength="500" placeholder="https://twitch.tv/tuusuario" type="url"/>
+<label for="pfCreatorStreamExperience">Experiencia previa, tipo de contenido o comunidad</label>
+<textarea id="pfCreatorStreamExperience" maxlength="1500" placeholder="Cuéntanos qué transmites y cómo es tu contenido." rows="3"></textarea>
+</div>
+<label for="pfCreatorBio">Cuéntanos tu idea o qué te gustaría aportar</label>
+<textarea id="pfCreatorBio" maxlength="2000" placeholder="Tu idea, experiencia, objetivos y tipo de colaboración que buscas." required="" rows="4"></textarea>
+<label class="pf-v9-consent"><input id="pfCreatorFeeConsent" required="" type="checkbox"/> Entiendo que la cuota de recuperación es propuesta, no se cobra ahora y se informará antes de cualquier pago.</label>
+<label class="pf-v9-consent"><input id="pfCreatorDataConsent" required="" type="checkbox"/> Acepto que estos datos se usen para revisar esta solicitud de colaboración.</label>
+<button class="boton" type="submit">Enviar solicitud de creador</button>
+<button class="boton boton-secundario" id="pfCreatorExport" type="button">Descargar solicitudes guardadas</button>
+<p aria-live="polite" class="pf-v9-status" id="pfCreatorStatus" role="status"></p>
+<a class="boton boton-secundario" hidden="" href="#creadores" id="pfCreatorMailLink">Enviar solicitud por correo</a>
+</form>
+</article>
+</div>
+<div class="panel-pixel pf-v9-panel pf-stream-request-panel">
+<h3>Solicitar permiso para aparecer en los streams</h3>
+<p>El canal debe pertenecer a la persona solicitante o contar con autorización expresa. PixelForge puede incrustar un canal de Twitch; para YouTube u otras plataformas se revisará si corresponde enlazar o incrustar el contenido. La persona creadora inicia y controla la transmisión desde su plataforma: esta página no captura la cámara ni recibe video directamente.</p>
+<form class="pf-v9-form" id="pfStreamRequestForm">
+<label for="pfStreamRequestName">Nombre o alias</label>
+<input id="pfStreamRequestName" maxlength="100" placeholder="Nombre de creador" required=""/>
+<label for="pfStreamRequestEmail">Correo de contacto</label>
+<input id="pfStreamRequestEmail" maxlength="160" placeholder="tucorreo@ejemplo.com" required="" type="email"/>
+<label for="pfStreamRequestPlatform">Plataforma</label>
+<select id="pfStreamRequestPlatform" required=""><option value="Twitch">Twitch</option><option value="YouTube">YouTube</option></select>
+<label for="pfStreamRequestUrl">URL de tu canal o directo</label>
+<input id="pfStreamRequestUrl" maxlength="500" placeholder="https://www.twitch.tv/tuusuario" required="" type="url"/>
+<label for="pfStreamRequestContent">¿Qué tipo de contenido transmites?</label>
+<textarea id="pfStreamRequestContent" maxlength="1200" placeholder="Juegos, frecuencia de transmisión, público... " required="" rows="3"></textarea>
+<label class="pf-v9-consent"><input id="pfStreamRequestPermission" required="" type="checkbox"/> Confirmo que soy titular del canal o tengo autorización y permito que PixelForge incruste o enlace mi contenido para revisión y promoción.</label>
+<label class="pf-v9-consent"><input id="pfStreamRequestRules" required="" type="checkbox"/> Acepto las reglas de convivencia, derechos de autor y moderación de PixelForge.</label>
+<div class="pf-v9-actions"><button class="boton" type="submit">Solicitar permiso</button><button class="boton boton-secundario" id="pfStreamRequestExport" type="button">Descargar solicitudes de stream</button></div>
+<p aria-live="polite" class="pf-v9-status" id="pfStreamRequestStatus" role="status"></p>
+<a class="boton boton-secundario" hidden="" href="#creadores" id="pfStreamRequestMailLink">Enviar solicitud por correo</a>
+</form>
+</div>
+<div class="panel-pixel pf-v9-panel">
+<h3>Vista previa de un canal autorizado</h3>
+<p class="descripcion">Para prueba manual, puedes cargar un canal público de Twitch. Para mostrar oficialmente un creador en portada, confirma primero su permiso.</p>
+<div class="pf-v9-local-list" id="pfApprovedStreams"><p class="pf-v9-empty">Todavía no hay canales destacados configurados.</p></div>
+</div>
+</section>
+<section class="seccion pf-v9-section" id="reportes">
+<p class="etiqueta">CALIDAD Y SOPORTE</p>
+<h2>Centro de reportes</h2>
+<p class="descripcion">Registra errores, problemas visuales o propuestas. Cuando la migración V9 está instalada y Supabase está disponible, se envían al panel de administración; también se guarda una copia local de respaldo.</p>
+<div class="panel-pixel pf-v9-panel">
+<form class="pf-v9-form" id="pfV9ReportForm">
+<label for="pfV9ReportType">Tipo de reporte</label>
+<select id="pfV9ReportType" required="">
+<option value="Error funcional">Error funcional</option>
+<option value="Diseño o accesibilidad">Diseño o accesibilidad</option>
+<option value="Catálogo o API">Catálogo o API</option>
+<option value="Streams">Streams</option>
+<option value="Música">Música</option>
+<option value="Sugerencia">Sugerencia</option>
+</select>
+<label for="pfV9ReportTitle">Resumen</label>
+<input id="pfV9ReportTitle" maxlength="120" placeholder="Ej. No carga la imagen de un juego" required=""/>
+<label for="pfV9ReportDetail">Descripción y pasos para reproducirlo</label>
+<textarea id="pfV9ReportDetail" maxlength="2500" placeholder="Describe qué pasó, qué esperabas y cómo repetir el problema." required="" rows="4"></textarea>
+<div class="pf-v9-actions">
+<button class="boton" type="submit">Guardar reporte</button>
+<button class="boton boton-secundario" id="pfV9ExportReports" type="button">Descargar reportes JSON</button>
+</div>
+<p aria-live="polite" class="pf-v9-status" id="pfV9ReportStatus" role="status"></p>
+</form>
+<h3>Reportes guardados en este navegador</h3>
+<div class="pf-v9-local-list" id="pfV9ReportList"><p>Aún no hay reportes guardados.</p></div>
+</div>
+</section>
+<section class="seccion pf-v9-section pf-admin-section" hidden="" id="administracion">
+<p class="etiqueta">PIXELFORGE · CONTROL INTERNO</p>
+<h2>Dashboard del administrador</h2>
+<p class="descripcion">Revisa propuestas de creadores, permisos de streams, reportes y seguimiento manual de cuotas. Las acciones se validan en Supabase mediante las políticas de administrador.</p>
+<p aria-live="polite" class="pf-v9-status" id="pfAdminGate" role="status">Verificando acceso administrativo…</p>
+<div hidden="" id="pfAdminWorkspace">
+<div class="pf-v9-stats pf-admin-stats">
+<article class="pf-v9-stat"><span>Solicitudes de creadores</span><strong id="pfAdminCreatorCount">—</strong></article>
+<article class="pf-v9-stat"><span>Solicitudes de stream</span><strong id="pfAdminStreamCount">—</strong></article>
+<article class="pf-v9-stat"><span>Reportes</span><strong id="pfAdminReportCount">—</strong></article>
+<article class="pf-v9-stat"><span>Cuotas por revisar</span><strong id="pfAdminFeeCount">—</strong></article>
+</div>
+<div class="pf-v9-quick">
+<button class="boton" id="pfAdminRefresh" type="button">Actualizar solicitudes</button>
+<a class="boton boton-secundario" href="#proponer">Moderar propuestas de juegos y catálogo</a>
+</div>
+<section class="pf-admin-block">
+<h3>Creadores y posibles colaboradores</h3>
+<p class="descripcion">Aprueba o rechaza solicitudes, cambia su estado y registra manualmente el estado de la cuota. No se procesa ningún pago desde este panel.</p>
+<div class="pf-admin-list" id="pfAdminCreatorList"><p class="pf-v9-empty">Cargando solicitudes…</p></div>
+</section>
+<section class="pf-admin-block">
+<h3>Permisos de stream</h3>
+<p class="descripcion">Destacar un canal confirma que ya revisaste la autorización. Solo se mostrarán públicamente los canales marcados como activos.</p>
+<div class="pf-admin-list" id="pfAdminStreamList"><p class="pf-v9-empty">Cargando solicitudes…</p></div>
+</section>
+<section class="pf-admin-block">
+<h3>Centro de reportes</h3>
+<div class="pf-admin-list" id="pfAdminReportList"><p class="pf-v9-empty">Cargando reportes…</p></div>
+</section>
+<p aria-live="polite" class="pf-v9-status" id="pfAdminStatus" role="status"></p>
+</div>
+</section>
+<section class="seccion pf-learning-section" id="aprendizaje">
+<p class="etiqueta">PIXEL FORGE · BIBLIOTECA DE APRENDIZAJE</p>
+<h2>Aprende, experimenta y crea</h2>
+<p class="descripcion">Manuales prácticos para comenzar en programación y streaming. Avanza a tu ritmo, prueba los ejercicios y construye tus propios proyectos.</p>
+<div class="pf-learning-grid">
+<article class="pf-learning-card pf-learning-code">
+<div aria-hidden="true" class="pf-learning-art"><span>&lt;/&gt;</span><i></i><i></i></div>
+<div class="pf-learning-card-body">
+<span class="pf-learning-tag">PROGRAMACIÓN · PRINCIPIANTE</span>
+<h3>Manual de programación para principiantes</h3>
+<p>Aprende fundamentos y crea un videojuego 2D con Godot, una app de tareas con Flutter y una página web personal.</p>
+<ul><li>12 capítulos</li><li>3 tutoriales prácticos</li><li>Ejercicios y proyecto final</li></ul>
+<a class="boton" href="#manual-programacion">Comenzar manual</a>
+</div>
+</article>
+<article class="pf-learning-card pf-learning-live">
+<div aria-hidden="true" class="pf-learning-art"><span>LIVE</span><i></i><i></i></div>
+<div class="pf-learning-card-body">
+<span class="pf-learning-tag">STREAMING · PRINCIPIANTE</span>
+<h3>Manual de streaming para principiantes</h3>
+<p>Prepara tu canal, equipo, conexión y OBS Studio; aprende a producir, moderar y realizar tu primera transmisión.</p>
+<ul><li>16 capítulos</li><li>Guía paso a paso de OBS</li><li>Seguridad y checklist de directo</li></ul>
+<a class="boton" href="#manual-streaming">Comenzar manual</a>
+</div>
+</article>
+</div>
+<p class="pf-learning-note">El progreso de lectura se guarda en el navegador donde abres cada manual. No se sincroniza con Supabase ni con otros dispositivos.</p>
+</section>
+<section class="seccion pf-v9-section" id="contactos">
+<p class="etiqueta">CANALES OFICIALES</p>
+<h2>Contactos</h2>
+<p class="descripcion">Los datos de contacto se pueden completar en la configuración de la web. No se muestran direcciones inventadas.</p>
+<div class="pf-v9-contact-grid">
+<article class="pf-v9-contact-card"><span>Correo</span><a href="#contactos" id="pfV9ContactEmail">Añadir correo en api-config.js</a></article>
+<article class="pf-v9-contact-card"><span>WhatsApp</span><a href="#contactos" id="pfV9ContactWhatsapp">Añadir número en api-config.js</a></article>
+<article class="pf-v9-contact-card"><span>Red social</span><a href="#contactos" id="pfV9ContactSocial">Añadir enlace en api-config.js</a></article>
+</div>
+</section>
+</main><footer id="contacto">
+<h2>PIXELFORGE</h2>
+<p>Tu próximo juego favorito te espera. Explora, juega, transmite y comparte.</p>
+<p class="copyright">© <span id="anioActual"></span> PixelForge</p>
+</footer></div><section aria-label="Manual de programación" class="pf-manual-view" data-pf-manual="mp" hidden="" id="manual-programacion">
+<header class="manual-topbar"><a class="manual-brand" href="#inicio"><span class="brand-cube">PF</span><span>PIXEL <b>FORGE</b></span></a><nav><a href="#aprendizaje">Biblioteca</a><a href="#manual-programacion">Programación</a><a href="#manual-streaming">Streaming</a></nav></header>
+<main class="manual-shell">
+<section class="manual-hero"><div><p class="manual-eyebrow">ANEXO EDUCATIVO · PROGRAMACIÓN</p><h2>Manual de programación para principiantes</h2><p class="manual-subtitle">Aprende a crear videojuegos, aplicaciones móviles y páginas web desde cero.</p><p class="manual-description">Guía práctica progresiva para jóvenes, estudiantes y personas que desean iniciar en programación, desarrollo de videojuegos, aplicaciones y páginas web.</p><div class="manual-meta"><span>12+/16 capítulos</span><span>Lectura y práctica por etapas</span><span>Nivel principiante</span></div></div><div aria-hidden="true" class="hero-emblem"><span>&lt;/&gt;</span><i></i><i></i><i></i></div></section>
+<div class="manual-layout"><aside class="manual-sidebar" id="mp-indice"><div class="sidebar-heading"><span>CONTENIDO</span><small id="mp-progressText">0 de 12 completados</small></div><div class="progress-track"><span id="mp-progressBar"></span></div><label class="manual-search-label" for="mp-chapterSearch">Buscar capítulo</label><input class="manual-search" id="mp-chapterSearch" placeholder="Escribe para filtrar…" type="search"/> <nav class="chapter-nav"><a data-nav="1" href="#mp-capitulo-1"><span>01</span>Introducción a la programación</a><a data-nav="2" href="#mp-capitulo-2"><span>02</span>Preparación del entorno de trabajo</a><a data-nav="3" href="#mp-capitulo-3"><span>03</span>Desarrollo de videojuegos</a><a data-nav="4" href="#mp-capitulo-4"><span>04</span>Desarrollo de aplicaciones móviles</a><a data-nav="5" href="#mp-capitulo-5"><span>05</span>Desarrollo de páginas web</a><a data-nav="6" href="#mp-capitulo-6"><span>06</span>Comparación de las tres áreas</a><a data-nav="7" href="#mp-capitulo-7"><span>07</span>Errores frecuentes y soluciones</a><a data-nav="8" href="#mp-capitulo-8"><span>08</span>Ejercicios prácticos</a><a data-nav="9" href="#mp-capitulo-9"><span>09</span>Recursos para continuar aprendiendo</a><a data-nav="10" href="#mp-capitulo-10"><span>10</span>Proyecto final</a><a data-nav="11" href="#mp-capitulo-11"><span>11</span>Glosario de programación</a><a data-nav="12" href="#mp-capitulo-12"><span>12</span>Conclusión</a></nav><a class="sidebar-back" href="#aprendizaje">← Volver a la Biblioteca</a></aside>
+<article class="manual-content"><div class="reading-tools"><span>LECTURA GUIADA</span><button id="mp-resetProgress" type="button">Reiniciar progreso</button><button onclick="window.print()" type="button">Imprimir / Guardar PDF</button></div>
+<section class="manual-intro"><h3>Antes de comenzar</h3><p>Este material está dirigido a personas que empiezan desde cero. Avanza capítulo por capítulo, realiza las prácticas y adapta los ejemplos a tu proyecto. Los avances se guardan únicamente en este navegador; no se sincronizan con tu cuenta de Pixel Forge.</p><div class="tip"><b>Cómo usar este manual:</b> lee el concepto, realiza los pasos, prueba el resultado y marca el capítulo cuando termines. Los enlaces externos abren documentación de sus responsables.</div></section>
+<section class="manual-chapter" data-chapter="1" id="mp-capitulo-1">
+<div class="chapter-kicker">CAPÍTULO 01</div>
+<h3>Introducción a la programación</h3>
+<div class="chapter-body">
+<p>Programar es escribir instrucciones precisas para que una computadora realice una tarea. Un programa recibe datos, procesa esos datos mediante reglas y produce un resultado. No necesitas memorizar un lenguaje completo: primero aprende a dividir un problema en pasos pequeños.</p>
+<div class="concept-grid"><article><h4>Algoritmo</h4><p>Secuencia finita y ordenada de pasos para resolver un problema. Ejemplo: preparar una bebida, desde llenar el vaso hasta servir.</p></article><article><h4>Lenguaje</h4><p>Conjunto de reglas y palabras que permite expresar instrucciones: Python, JavaScript, C#, GDScript o Dart.</p></article><article><h4>Programa</h4><p>Implementación de un algoritmo en un lenguaje que el entorno puede ejecutar.</p></article></div>
+<h4>Los bloques fundamentales</h4>
+<ul><li><b>Variables:</b> nombres asociados a valores, por ejemplo <code>puntos = 0</code>.</li><li><b>Tipos:</b> números, texto, valores booleanos y colecciones.</li><li><b>Condiciones:</b> permiten elegir una ruta: <code>si</code> ocurre algo, entonces...</li><li><b>Ciclos:</b> repiten instrucciones mientras se cumpla una condición o por cada elemento.</li><li><b>Funciones:</b> agrupan instrucciones con un nombre y pueden recibir datos y devolver resultados.</li><li><b>Errores:</b> sintaxis (reglas mal escritas), ejecución (falla al correr) y lógica (el programa corre, pero responde mal).</li></ul>
+<h4>Ejemplo cotidiano convertido en algoritmo</h4><ol><li>Leer el total de una compra.</li><li>Si el total supera 500, calcular un descuento del 10 %.</li><li>Mostrar el importe final.</li></ol>
+<pre class="code-wrap"><code class="language-python">total = 650
+if total &gt; 500:
+    total = total * 0.90
+print("Total a pagar:", total)</code><button class="copy-code" type="button">Copiar código</button></pre>
+<p><b>Prueba mental:</b> con un total de 400 no se aplica descuento; con 650 el resultado es 585. Practica describiendo primero la solución con palabras y después tradúcela a código.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="1" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="2" id="mp-capitulo-2">
+<div class="chapter-kicker">CAPÍTULO 02</div>
+<h3>Preparación del entorno de trabajo</h3>
+<div class="chapter-body">
+<p>Un entorno de trabajo reúne el equipo, el sistema operativo, el editor, los SDK o motores y las herramientas para probar el proyecto. Una computadora reciente de uso general suele bastar para comenzar con páginas web y ejercicios; el desarrollo 3D y los emuladores móviles pueden exigir más memoria y una GPU compatible.</p>
+<h4>Ruta de instalación sugerida en Windows</h4><ol><li>Actualiza Windows y comprueba que tengas espacio disponible.</li><li>Instala <a href="https://code.visualstudio.com/" rel="noopener" target="_blank">Visual Studio Code</a>.</li><li>En VS Code instala extensiones solo desde el Marketplace oficial; para HTML/CSS/JS puedes empezar sin extensiones adicionales.</li><li>Descarga <a href="https://godotengine.org/download/" rel="noopener" target="_blank">Godot 4</a> para el primer videojuego. La versión estándar es suficiente para GDScript.</li><li>Para Flutter, sigue la guía oficial de instalación de <a href="https://docs.flutter.dev/get-started/install" rel="noopener" target="_blank">Flutter</a>, instala el SDK y Android Studio si vas a usar el emulador Android.</li><li>Abre una terminal y ejecuta <code>flutter doctor</code>; corrige los elementos que el diagnóstico marque como pendientes.</li><li>Crea una carpeta por proyecto y conserva nombres claros: <code>assets</code>, <code>scenes</code>, <code>scripts</code> o <code>lib</code>, según la herramienta.</li></ol>
+<div class="tip"><b>Consejo:</b> instala una herramienta a la vez y abre un proyecto de prueba antes de agregar otras. Así podrás identificar qué instalación causó un problema.</div>
+<h4>Herramientas por área</h4><table><thead><tr><th>Área</th><th>Herramienta inicial</th><th>Para qué sirve</th></tr></thead><tbody><tr><td>Web</td><td>VS Code + navegador</td><td>Editar y probar HTML, CSS y JavaScript.</td></tr><tr><td>Videojuegos</td><td>Godot 4</td><td>Crear escenas 2D/3D y scripts GDScript.</td></tr><tr><td>Móvil</td><td>Flutter + Dart</td><td>Construir interfaces y aplicaciones multiplataforma.</td></tr><tr><td>Control de versiones</td><td>Git + GitHub</td><td>Guardar historial y compartir código.</td></tr></tbody></table>
+<p>En macOS y Linux, usa las instrucciones oficiales específicas de cada sistema. Los nombres de botones, requisitos y pasos de instalación pueden cambiar entre versiones.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="2" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="3" id="mp-capitulo-3">
+<div class="chapter-kicker">CAPÍTULO 03</div>
+<h3>Desarrollo de videojuegos</h3>
+<div class="chapter-body">
+<p>Un videojuego combina reglas, entrada del jugador, gráficos, sonido, físicas y estados. El motor organiza estos elementos y ofrece herramientas para construir escenas, importar recursos, probar y exportar.</p>
+<div class="concept-grid"><article><h4>Godot + GDScript</h4><p>Motor gratuito y de código abierto; GDScript tiene sintaxis sencilla y está integrado con el editor. Buena ruta 2D inicial.</p><a href="https://godotengine.org/" rel="noopener" target="_blank">Sitio oficial</a></article><article><h4>Unity + C#</h4><p>Motor ampliamente usado en 2D, 3D y experiencias interactivas. Requiere aprender C# y el flujo de escenas y componentes.</p><a href="https://unity.com/" rel="noopener" target="_blank">Sitio oficial</a></article><article><h4>Unreal Engine</h4><p>Motor 3D avanzado con Blueprints visuales y C++. Puede requerir hardware más potente.</p><a href="https://www.unrealengine.com/" rel="noopener" target="_blank">Sitio oficial</a></article><article><h4>Scratch</h4><p>Entorno visual por bloques para aprender secuencias, eventos, ciclos y condiciones sin comenzar escribiendo sintaxis.</p><a href="https://scratch.mit.edu/" rel="noopener" target="_blank">Sitio oficial</a></article></div>
+<h4>Tutorial: juego 2D de recolección en Godot 4</h4>
+<p><b>Resultado:</b> controlarás un personaje visto desde arriba, recogerás monedas, sumarás puntos y terminarás al recogerlas todas. El tutorial usa formas simples para que no dependas de imágenes externas. Requiere Godot 4.x; consulta la documentación estable si tu versión cambia.</p>
+<ol><li>Abre Godot, selecciona <b>New Project</b>, escribe <code>Recolector2D</code> y crea el proyecto con renderizador recomendado para tu equipo.</li><li>En <b>Project &gt; Project Settings &gt; Display &gt; Window</b>, configura una ventana de 960 × 540. En <b>Input Map</b> agrega las acciones <code>mover_izquierda</code>, <code>mover_derecha</code>, <code>mover_arriba</code>, <code>mover_abajo</code> y asigna A/D/W/S o flechas.</li><li>Crea una escena <code>Player.tscn</code> con raíz <code>CharacterBody2D</code> llamada <code>Player</code>. Añade <code>CollisionShape2D</code> con forma <code>CircleShape2D</code> y un <code>Polygon2D</code> o <code>Sprite2D</code> como apariencia. Guarda en <code>scenes/</code>.</li><li>Adjunta el script <code>scripts/player.gd</code> a Player:</li></ol>
+<pre class="code-wrap"><code class="language-gdscript">extends CharacterBody2D
+
+@export var speed: float = 260.0
+
+func _physics_process(_delta: float) -&gt; void:
+    var direction := Input.get_vector(
+        "mover_izquierda", "mover_derecha",
+        "mover_arriba", "mover_abajo"
+    )
+    velocity = direction * speed
+    move_and_slide()
+    var bounds := get_viewport_rect().size
+    position = position.clamp(Vector2(16, 16), bounds - Vector2(16, 16))</code><button class="copy-code" type="button">Copiar código</button></pre>
+<ol start="5"><li>Crea <code>Coin.tscn</code> con raíz <code>Area2D</code> llamada <code>Coin</code>, añade <code>CollisionShape2D</code> con <code>CircleShape2D</code> y un <code>Polygon2D</code> de color amarillo. Adjunta:</li></ol>
+<pre class="code-wrap"><code class="language-gdscript">extends Area2D
+signal collected
+
+func _ready() -&gt; void:
+    body_entered.connect(_on_body_entered)
+
+func _on_body_entered(body: Node2D) -&gt; void:
+    if body is CharacterBody2D:
+        collected.emit()
+        queue_free()</code><button class="copy-code" type="button">Copiar código</button></pre>
+<ol start="6"><li>Crea <code>Main.tscn</code> con raíz <code>Node2D</code> llamada <code>Main</code>. Añade una instancia de <code>Player</code> como hijo directo y crea un nodo <code>Node2D</code> llamado <code>Coins</code>; coloca dentro varias instancias de <code>Coin</code>. Distribúyelas dentro del área visible.</li><li>Añade un <code>CanvasLayer</code> llamado <code>HUD</code> y, dentro, un <code>VBoxContainer</code> con cuatro nodos: <code>ScoreLabel</code> (Label), <code>StateLabel</code> (Label), <code>StartButton</code> (Button, texto “Iniciar”) y <code>RestartButton</code> (Button, texto “Volver a jugar”). El árbol debe quedar así: <code>Main/Player</code>, <code>Main/Coins/Coin...</code> y <code>Main/HUD/VBoxContainer/(ScoreLabel, StateLabel, StartButton, RestartButton)</code>.</li><li>Adjunta a Main el script siguiente. Los botones se conectan desde código para que no tengas que crear conexiones manuales:</li></ol>
+<pre class="code-wrap"><code class="language-gdscript">extends Node2D
+
+@onready var score_label: Label = $HUD/VBoxContainer/ScoreLabel
+@onready var state_label: Label = $HUD/VBoxContainer/StateLabel
+@onready var start_button: Button = $HUD/VBoxContainer/StartButton
+@onready var restart_button: Button = $HUD/VBoxContainer/RestartButton
+@onready var player: CharacterBody2D = $Player
+@onready var coins_root: Node2D = $Coins
+
+var score: int = 0
+var total_coins: int = 0
+var started: bool = false
+
+func _ready() -&gt; void:
+    var coins := coins_root.get_children()
+    total_coins = coins.size()
+    player.set_physics_process(false)
+    for coin in coins:
+        coin.collected.connect(_on_coin_collected)
+        coin.hide()
+    start_button.pressed.connect(_start_game)
+    restart_button.pressed.connect(_restart_game)
+    restart_button.hide()
+    state_label.text = "Presiona Iniciar para comenzar"
+    _update_score()
+
+func _start_game() -&gt; void:
+    started = true
+    player.position = get_viewport_rect().size / 2.0
+    player.set_physics_process(true)
+    for coin in coins_root.get_children():
+        coin.show()
+    start_button.hide()
+    state_label.text = "¡Recoge todas las monedas!"
+    if total_coins == 0:
+        _finish_game()
+
+func _on_coin_collected() -&gt; void:
+    if not started:
+        return
+    score += 1
+    _update_score()
+    if score &gt;= total_coins:
+        _finish_game()
+
+func _finish_game() -&gt; void:
+    started = false
+    player.set_physics_process(false)
+    state_label.text = "¡Nivel completado!"
+    restart_button.show()
+
+func _restart_game() -&gt; void:
+    get_tree().reload_current_scene()
+
+func _update_score() -&gt; void:
+    score_label.text = "Monedas: %d / %d" % [score, total_coins]</code><button class="copy-code" type="button">Copiar código</button></pre>
+<div class="warning"><b>Importante para que funcione:</b> las monedas deben ser hijas del nodo <code>Coins</code> y llamarse/instanciarse desde la escena Coin. La ruta de los nodos HUD debe coincidir exactamente con el árbol indicado. Cada Coin emite la señal <code>collected</code> y se elimina con <code>queue_free()</code>.</div>
+<ol start="8"><li>Define <code>Main.tscn</code> como escena principal desde <b>Project &gt; Project Settings &gt; Application &gt; Run</b> o pulsa el botón para establecer la escena actual.</li><li>Ejecuta con F6 para probar la escena o F5 para el proyecto. Comprueba movimiento, límites, colisiones y puntuación.</li><li>Para una pantalla de inicio y final, crea un <code>Control</code> con botones Iniciar/Reintentar y un panel de resultado. Ocúltalo al empezar; al terminar, muéstralo. Conecta las señales <code>pressed</code> de los botones a funciones que reinicien la escena o cambien el estado del juego.</li></ol>
+<h4>Pruebas mínimas</h4><ul><li>El personaje se mueve en cuatro direcciones y no se desplaza cuando no pulsas nada.</li><li>Una moneda desaparece una sola vez y el contador aumenta exactamente uno.</li><li>Al recoger todas las monedas aparece el mensaje de nivel completado.</li><li>La escena se ejecuta con el tamaño de ventana definido.</li></ul>
+<p>Este ejemplo enseña nodos, escenas, físicas, señales y HUD. Para una versión con enemigos, temporizador y reinicio completo, sigue el tutorial oficial <a href="https://docs.godotengine.org/es/4.x/getting_started/first_2d_game/index.html" rel="noopener" target="_blank">Tu primer juego 2D</a>.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="3" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="4" id="mp-capitulo-4">
+<div class="chapter-kicker">CAPÍTULO 04</div>
+<h3>Desarrollo de aplicaciones móviles</h3>
+<div class="chapter-body">
+<p>Una aplicación móvil presenta información y permite realizar acciones con controles táctiles. Flutter usa Dart para crear interfaces desde una base de código; Android Studio ofrece emulador y herramientas Android. MIT App Inventor permite aprender con bloques visuales.</p>
+<h4>Herramientas</h4><ul><li><b>Flutter/Dart:</b> aplicaciones multiplataforma con widgets.</li><li><b>Android Studio:</b> SDK, emuladores y herramientas de compilación Android.</li><li><b>VS Code:</b> editor ligero con extensiones oficiales de Flutter y Dart.</li><li><b>MIT App Inventor:</b> prototipos educativos mediante programación por bloques.</li></ul>
+<h4>Tutorial: lista de tareas en Flutter</h4><ol><li>Instala Flutter siguiendo <a href="https://docs.flutter.dev/get-started/install" rel="noopener" target="_blank">la guía oficial</a> para tu sistema.</li><li>Instala Android Studio y un Android SDK compatible si probarás en emulador.</li><li>En terminal ejecuta <code>flutter doctor</code> y resuelve los avisos antes de continuar.</li><li>Ejecuta <code>flutter create lista_tareas</code> y entra en la carpeta con <code>cd lista_tareas</code>.</li><li>Abre <code>lib/main.dart</code> y reemplaza su contenido por este ejemplo.</li></ol>
+<pre class="code-wrap"><code class="language-dart">import 'package:flutter/material.dart';
+
+void main() =&gt; runApp(const TodoApp());
+
+class Task {
+  Task(this.title);
+  final String title;
+  bool done = false;
+}
+
+class TodoApp extends StatelessWidget {
+  const TodoApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Mi lista de tareas',
+      theme: ThemeData(colorSchemeSeed: Colors.deepPurple,
+          useMaterial3: true),
+      home: const TodoPage(),
+    );
+  }
+}
+
+class TodoPage extends StatefulWidget {
+  const TodoPage({super.key});
+
+  @override
+  State&lt;TodoPage&gt; createState() =&gt; _TodoPageState();
+}
+
+class _TodoPageState extends State&lt;TodoPage&gt; {
+  final List&lt;Task&gt; tasks = [];
+  final TextEditingController controller = TextEditingController();
+
+  void addTask() {
+    final title = controller.text.trim();
+    if (title.isEmpty) return;
+    setState(() {
+      tasks.add(Task(title));
+      controller.clear();
+    });
+  }
+
+  void toggleTask(int index, bool? value) {
+    setState(() =&gt; tasks[index].done = value ?? false);
+  }
+
+  void deleteTask(int index) {
+    setState(() =&gt; tasks.removeAt(index));
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Mis tareas')),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(children: [
+          Row(children: [
+            Expanded(child: TextField(
+              controller: controller,
+              decoration: const InputDecoration(
+                labelText: 'Nueva tarea', border: OutlineInputBorder()),
+              onSubmitted: (_) =&gt; addTask(),
+            )),
+            const SizedBox(width: 8),
+            FilledButton(onPressed: addTask, child: const Icon(Icons.add)),
+          ]),
+          const SizedBox(height: 16),
+          Expanded(child: tasks.isEmpty
+            ? const Center(child: Text('Aún no tienes tareas.'))
+            : ListView.builder(
+                itemCount: tasks.length,
+                itemBuilder: (context, index) {
+                  final task = tasks[index];
+                  return Card(child: ListTile(
+                    leading: Checkbox(value: task.done,
+                      onChanged: (value) =&gt; toggleTask(index, value)),
+                    title: Text(task.title,
+                      style: TextStyle(decoration: task.done
+                        ? TextDecoration.lineThrough : null)),
+                    trailing: IconButton(
+                      tooltip: 'Eliminar tarea',
+                      icon: const Icon(Icons.delete_outline),
+                      onPressed: () =&gt; deleteTask(index),
+                    ),
+                  ));
+                },
+              )),
+        ]),
+      ),
+    );
+  }
+}</code><button class="copy-code" type="button">Copiar código</button></pre>
+<ol start="6"><li>Conecta un emulador o dispositivo con depuración USB habilitada y autorizada.</li><li>En la carpeta del proyecto ejecuta <code>flutter run</code>. Para compilar una versión Android de distribución, revisa la guía oficial de despliegue y firma; no compartas claves de firma.</li><li>Prueba agregar una tarea, marcarla, desmarcarla, eliminarla y enviar el formulario con el campo vacío.</li></ol>
+<div class="warning"><b>Alcance:</b> este ejemplo mantiene tareas en memoria. Al cerrar la aplicación se pierden; para conservarlas agrega persistencia local o una base de datos después de estudiar almacenamiento seguro.</div>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="4" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="5" id="mp-capitulo-5">
+<div class="chapter-kicker">CAPÍTULO 05</div>
+<h3>Desarrollo de páginas web</h3>
+<div class="chapter-body">
+<p>HTML describe la estructura, CSS define la presentación y JavaScript agrega comportamiento. Se ejecutan en el navegador y permiten crear una página adaptable sin instalar un servidor para una primera práctica.</p>
+<h4>Proyecto: página personal</h4><ol><li>Crea una carpeta <code>mi-portafolio</code> con <code>index.html</code>, <code>styles.css</code> y <code>script.js</code>.</li><li>En VS Code abre la carpeta completa.</li><li>Copia los tres archivos siguientes. Cambia el texto de ejemplo por información propia y usa imágenes que tengas permiso de publicar.</li></ol>
+<h5>index.html</h5>
+<pre class="code-wrap"><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;meta name="description" content="Portafolio personal de proyectos digitales"&gt;
+  &lt;title&gt;Mi portafolio&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;script src="script.js" defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header class="site-header"&gt;
+    &lt;a class="brand" href="#inicio"&gt;MiPortafolio&lt;/a&gt;
+    &lt;nav aria-label="Navegación principal"&gt;
+      &lt;a href="#sobre-mi"&gt;Sobre mí&lt;/a&gt;&lt;a href="#habilidades"&gt;Habilidades&lt;/a&gt;
+      &lt;a href="#proyectos"&gt;Proyectos&lt;/a&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;section id="inicio" class="hero"&gt;
+      &lt;p class="eyebrow"&gt;Hola, soy&lt;/p&gt;&lt;h1&gt;Tu nombre&lt;/h1&gt;
+      &lt;p&gt;Estudiante y creador en formación. Me gusta aprender y construir.&lt;/p&gt;
+      &lt;a class="button" href="#proyectos"&gt;Ver proyectos&lt;/a&gt;
+    &lt;/section&gt;
+    &lt;section id="sobre-mi"&gt;&lt;h2&gt;Sobre mí&lt;/h2&gt;
+      &lt;p&gt;Escribe una breve presentación honesta sobre tus intereses y objetivos.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section id="habilidades"&gt;&lt;h2&gt;Habilidades&lt;/h2&gt;
+      &lt;ul class="skills"&gt;&lt;li&gt;HTML&lt;/li&gt;&lt;li&gt;CSS&lt;/li&gt;&lt;li&gt;JavaScript&lt;/li&gt;&lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section id="proyectos"&gt;&lt;h2&gt;Proyectos&lt;/h2&gt;
+      &lt;article class="project"&gt;&lt;h3&gt;Proyecto inicial&lt;/h3&gt;
+        &lt;p&gt;Describe el problema, tu solución y las herramientas utilizadas.&lt;/p&gt;
+      &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;section id="contacto"&gt;&lt;h2&gt;Contacto&lt;/h2&gt;
+      &lt;p&gt;Correo: &lt;a href="mailto:tu-correo@ejemplo.com"&gt;tu-correo@ejemplo.com&lt;/a&gt;&lt;/p&gt;
+      &lt;button id="saludo" type="button"&gt;Mostrar saludo&lt;/button&gt;
+      &lt;p id="mensaje" aria-live="polite"&gt;&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;&lt;p&gt;© &lt;span id="year"&gt;&lt;/span&gt; Tu nombre&lt;/p&gt;&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code><button class="copy-code" type="button">Copiar código</button></pre>
+<h5>styles.css</h5>
+<pre class="code-wrap"><code class="language-css">* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: system-ui, sans-serif;
+  line-height: 1.6; color: #172033; background: #f4f6fb; }
+.site-header { display: flex; justify-content: space-between; gap: 1rem;
+  align-items: center; padding: 1rem 6%; background: #101a32; color: white; }
+.brand { color: #69e6ff; font-weight: 800; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+nav a { color: white; text-decoration: none; }
+main { width: min(100% - 2rem, 900px); margin: auto; }
+section { padding: 4rem 0; scroll-margin-top: 1rem; }
+.hero { min-height: 55vh; display: grid; align-content: center; }
+h1 { font-size: clamp(2.5rem, 8vw, 5rem); margin: .1em 0; }
+.eyebrow { color: #5a38c8; font-weight: 700; }
+.button, button { display: inline-block; padding: .75rem 1rem;
+  border: 0; border-radius: .6rem; background: #5a38c8; color: white;
+  font: inherit; text-decoration: none; cursor: pointer; }
+.skills { display: flex; flex-wrap: wrap; gap: .7rem; padding: 0; list-style: none; }
+.skills li, .project { background: white; padding: 1rem; border-radius: .8rem; }
+footer { padding: 1.5rem; text-align: center; background: #101a32; color: white; }
+@media (max-width: 620px) {
+  .site-header { align-items: flex-start; flex-direction: column; }
+  nav { gap: .7rem; }
+  section { padding: 2.5rem 0; }
+}</code><button class="copy-code" type="button">Copiar código</button></pre>
+<h5>script.js</h5>
+<pre class="code-wrap"><code class="language-javascript">const year = document.querySelector('#year');
+if (year) year.textContent = new Date().getFullYear();
+
+const button = document.querySelector('#saludo');
+const message = document.querySelector('#mensaje');
+button?.addEventListener('click', () =&gt; {
+  if (message) message.textContent = '¡Gracias por visitar mi portafolio!';
+});</code><button class="copy-code" type="button">Copiar código</button></pre>
+<p><b>Cómo comprobar:</b> abre <code>index.html</code> en un navegador o usa Live Server; cambia el ancho de la ventana; prueba los enlaces del menú; pulsa el botón y revisa que aparezca el mensaje. Usa las herramientas de desarrollador del navegador para revisar errores de consola.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="5" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="6" id="mp-capitulo-6">
+<div class="chapter-kicker">CAPÍTULO 06</div>
+<h3>Comparación de las tres áreas</h3>
+<div class="chapter-body">
+<p>Las tres áreas comparten lógica, resolución de problemas, pruebas y organización, pero sus resultados y herramientas cambian.</p>
+<table><thead><tr><th>Área</th><th>Herramientas / lenguajes</th><th>Complejidad inicial</th><th>Primer proyecto</th></tr></thead><tbody><tr><td>Videojuegos</td><td>Godot/GDScript, Unity/C#, Unreal/Blueprints o C++</td><td>Media: combina lógica, escenas, físicas y recursos.</td><td>Juego 2D de recoger objetos.</td></tr><tr><td>Aplicaciones móviles</td><td>Flutter/Dart, Android Studio, App Inventor</td><td>Media: interfaz, estado, ciclo de vida y permisos.</td><td>Lista de tareas.</td></tr><tr><td>Páginas web</td><td>HTML, CSS, JavaScript, navegador</td><td>Básica a media: estructura, estilos y eventos.</td><td>Portafolio personal.</td></tr></tbody></table>
+<p>Elige según lo que quieras construir. Para comprender rápidamente la lógica, Scratch o una página web sencilla son buenas puertas de entrada. Si tu meta son videojuegos, comienza con un proyecto 2D pequeño antes de pasar a 3D.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="6" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="7" id="mp-capitulo-7">
+<div class="chapter-kicker">CAPÍTULO 07</div>
+<h3>Errores frecuentes y soluciones</h3>
+<div class="chapter-body">
+<table><thead><tr><th>Problema</th><th>Causa probable</th><th>Cómo identificarlo</th><th>Qué hacer</th></tr></thead><tbody>
+<tr><td>Error de sintaxis</td><td>Paréntesis, comillas, sangría o nombre mal escrito.</td><td>El editor marca una línea o el intérprete no inicia.</td><td>Lee el primer error, revisa la línea y las anteriores; corrige una cosa a la vez.</td></tr>
+<tr><td>Programa no ejecuta</td><td>Herramienta no instalada o terminal en carpeta incorrecta.</td><td>Comando no reconocido o archivo no encontrado.</td><td>Verifica instalación, PATH, carpeta actual y nombre exacto del archivo.</td></tr>
+<tr><td>Archivo no aparece</td><td>Guardado en una carpeta distinta o extensión oculta.</td><td>La ruta del proyecto no coincide.</td><td>Usa el explorador del editor y evita duplicar extensiones como <code>.txt</code>.</td></tr>
+<tr><td>Escena de Godot vacía</td><td>Escena principal incorrecta o nodo no agregado.</td><td>El proyecto inicia sin el contenido esperado.</td><td>Revisa la escena principal, el árbol de nodos y los errores del panel Output.</td></tr>
+<tr><td>Flutter no compila</td><td>SDK, dependencia o dispositivo sin configurar.</td><td><code>flutter doctor</code> muestra alertas o build falla.</td><td>Ejecuta diagnóstico, lee el primer error y sigue la guía oficial del componente que falta.</td></tr>
+<tr><td>Web sin estilos</td><td>Ruta CSS incorrecta o archivo no guardado.</td><td>Se ve HTML sin diseño.</td><td>Comprueba el nombre/ruta en <code>link</code> y recarga sin caché.</td></tr>
+<tr><td>Conexión/API falla</td><td>URL, clave, permisos, CORS o red.</td><td>Error de red o respuesta HTTP no exitosa.</td><td>Verifica URL, credenciales públicas permitidas, permisos y consola; nunca publiques secretos.</td></tr>
+</tbody></table>
+<h4>Método de depuración en cinco pasos</h4><ol><li>Reproduce el problema.</li><li>Lee el mensaje completo, empezando por el primer error.</li><li>Identifica archivo y línea.</li><li>Cambia una sola cosa y vuelve a probar.</li><li>Registra la solución para evitar repetirla.</li></ol>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="7" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="8" id="mp-capitulo-8">
+<div class="chapter-kicker">CAPÍTULO 08</div>
+<h3>Ejercicios prácticos</h3>
+<div class="chapter-body">
+<h4>Nivel básico</h4><ol><li>Declara variables para tu alias, edad y juego favorito; muestra una frase con esos datos.</li><li>Calcula el promedio de tres calificaciones y muestra si es aprobatorio según un umbral que tú declares.</li><li>Crea una función que convierta minutos en segundos.</li></ol>
+<details class="solution"><summary>Soluciones orientativas del nivel básico</summary><pre class="code-wrap"><code class="language-python">alias = "Player01"
+edad = 18
+juego = "Aventura"
+print(alias, edad, juego)
+
+calificaciones = [8, 9, 7]
+promedio = sum(calificaciones) / len(calificaciones)
+print(promedio, "Aprobado" if promedio &gt;= 7 else "No aprobado")
+
+def a_segundos(minutos):
+    return minutos * 60
+print(a_segundos(5))</code><button class="copy-code" type="button">Copiar código</button></pre></details>
+<h4>Nivel intermedio</h4><ol><li>Modifica la lista Flutter para editar una tarea antes de borrarla.</li><li>Añade al portafolio una tarjeta nueva y un filtro por categoría.</li><li>En Godot, limita el movimiento del personaje dentro del área visible.</li></ol>
+<details class="solution"><summary>Pistas del nivel intermedio</summary><ul><li>Para editar Flutter, abre un diálogo con un campo de texto y actualiza el elemento dentro de <code>setState</code>.</li><li>Para filtrar tarjetas, añade un atributo <code>data-categoria</code> y compara el valor seleccionado.</li><li>Para limitar al personaje, usa <code>clampf(position.x, min_x, max_x)</code> y su equivalente en Y.</li></ul></details>
+<h4>Nivel de aplicación</h4><ol><li>Construye un mini juego con tres niveles y puntuación.</li><li>Amplía la lista Flutter para guardar localmente las tareas.</li><li>Publica tu portafolio en un hosting estático y valida el diseño móvil.</li></ol>
+<p><b>Entrega:</b> captura o enlace del resultado, descripción del objetivo, herramientas usadas, dificultad encontrada y cómo la resolviste.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="8" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="9" id="mp-capitulo-9">
+<div class="chapter-kicker">CAPÍTULO 09</div>
+<h3>Recursos para continuar aprendiendo</h3>
+<div class="chapter-body">
+<ul class="resource-list"><li><a href="https://docs.godotengine.org/es/4.x/" rel="noopener" target="_blank">Documentación oficial de Godot 4</a> — motor, GDScript y tutoriales 2D.</li><li><a href="https://unity.com/learn" rel="noopener" target="_blank">Unity Learn</a> — cursos y proyectos guiados.</li><li><a href="https://dev.epicgames.com/documentation/" rel="noopener" target="_blank">Unreal Engine Documentation</a> — editor, Blueprints y C++.</li><li><a href="https://scratch.mit.edu/" rel="noopener" target="_blank">Scratch</a> — programación por bloques.</li><li><a href="https://docs.flutter.dev/" rel="noopener" target="_blank">Flutter Documentation</a> — instalación, widgets y despliegue.</li><li><a href="https://developer.android.com/studio" rel="noopener" target="_blank">Android Studio</a> — entorno Android.</li><li><a href="https://appinventor.mit.edu/" rel="noopener" target="_blank">MIT App Inventor</a> — aplicaciones con bloques.</li><li><a href="https://code.visualstudio.com/docs" rel="noopener" target="_blank">Visual Studio Code</a> — editor y depuración.</li><li><a href="https://www.w3schools.com/" rel="noopener" target="_blank">W3Schools</a> — referencias y ejemplos web.</li><li><a href="https://www.freecodecamp.org/learn/" rel="noopener" target="_blank">freeCodeCamp</a> — práctica guiada.</li><li><a href="https://docs.github.com/" rel="noopener" target="_blank">GitHub Docs</a> — repositorios y colaboración.</li></ul>
+<p>Prioriza la documentación oficial para confirmar cambios de versión. Los cursos de terceros son complementarios; compara la fecha de actualización y prueba los ejemplos en un proyecto separado.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="9" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="10" id="mp-capitulo-10">
+<div class="chapter-kicker">CAPÍTULO 10</div>
+<h3>Proyecto final</h3>
+<div class="chapter-body">
+<p>Elige una ruta y construye un producto pequeño pero terminado. La meta es demostrar el proceso completo, no competir por la cantidad de funciones.</p>
+<div class="concept-grid"><article><h4>Opción A · Videojuego 2D</h4><p>Objetivo: juego con personaje, objetivo, puntuación y pantalla final. Herramienta: Godot 4. Entrega: proyecto, controles, instrucciones y video corto de prueba.</p></article><article><h4>Opción B · Aplicación móvil</h4><p>Objetivo: lista de tareas con alta, completado y eliminación. Herramienta: Flutter. Entrega: código, capturas en emulador y explicación de estado y almacenamiento.</p></article><article><h4>Opción C · Página web</h4><p>Objetivo: portafolio responsivo con navegación y una interacción. Herramientas: HTML, CSS y JavaScript. Entrega: archivos y enlace publicado si tienes hosting.</p></article></div>
+<h4>Procedimiento</h4><ol><li>Escribe el problema y a quién ayuda tu proyecto.</li><li>Define tres funciones indispensables y separa las mejoras opcionales.</li><li>Dibuja un boceto de pantallas o escenas.</li><li>Prepara herramientas, carpetas y recursos con licencia adecuada.</li><li>Construye una función a la vez y realiza pruebas.</li><li>Documenta instalación, ejecución, controles y limitaciones.</li><li>Presenta el proyecto y reflexiona sobre lo que mejorarías.</li></ol>
+<h4>Rúbrica sugerida</h4><table><thead><tr><th>Criterio</th><th>Ponderación</th><th>Qué se observa</th></tr></thead><tbody><tr><td>Funcionamiento</td><td>30 %</td><td>Las funciones principales se ejecutan.</td></tr><tr><td>Organización</td><td>20 %</td><td>Archivos y nombres claros.</td></tr><tr><td>Diseño y accesibilidad</td><td>15 %</td><td>Lectura, navegación y adaptación.</td></tr><tr><td>Pruebas</td><td>20 %</td><td>Casos probados y errores corregidos.</td></tr><tr><td>Documentación</td><td>15 %</td><td>Instrucciones y reflexión comprensibles.</td></tr></tbody></table>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="10" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="11" id="mp-capitulo-11">
+<div class="chapter-kicker">CAPÍTULO 11</div>
+<h3>Glosario de programación</h3>
+<div class="chapter-body">
+<dl class="glossary"><dt>Algoritmo</dt><dd>Pasos ordenados para resolver una tarea.</dd><dt>API</dt><dd>Interfaz que permite que dos programas se comuniquen.</dd><dt>Array / lista</dt><dd>Colección ordenada de elementos.</dd><dt>Bug</dt><dd>Error o comportamiento no deseado.</dd><dt>Compilador</dt><dd>Herramienta que transforma código a otra representación ejecutable.</dd><dt>Condición</dt><dd>Expresión evaluada como verdadera o falsa.</dd><dt>Depuración</dt><dd>Proceso de localizar y corregir errores.</dd><dt>Evento</dt><dd>Acción que puede activar una respuesta del programa.</dd><dt>Función</dt><dd>Bloque reutilizable de instrucciones.</dd><dt>IDE</dt><dd>Entorno integrado para editar, ejecutar y depurar.</dd><dt>Interfaz</dt><dd>Medio con el que una persona interactúa con un sistema.</dd><dt>Loop / ciclo</dt><dd>Repetición controlada de instrucciones.</dd><dt>Objeto</dt><dd>Instancia con datos y comportamiento en programación orientada a objetos.</dd><dt>Repositorio</dt><dd>Espacio donde se guarda un proyecto y su historial.</dd><dt>SDK</dt><dd>Conjunto de herramientas para desarrollar para una plataforma.</dd><dt>Variable</dt><dd>Nombre que referencia un valor.</dd></dl>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="11" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="12" id="mp-capitulo-12">
+<div class="chapter-kicker">CAPÍTULO 12</div>
+<h3>Conclusión</h3>
+<div class="chapter-body">
+<p>Aprender programación es una práctica gradual. Cada proyecto enseña a plantear problemas, dividirlos, escribir instrucciones, probar resultados y corregir fallos. No necesitas dominar todas las herramientas a la vez.</p><p>Empieza con una meta alcanzable, conserva versiones de tu trabajo y pide retroalimentación. Después amplía tu proyecto con funciones nuevas. <b>PIXEL FORGE — Imagina, aprende, experimenta y crea tu propio mundo digital.</b></p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="12" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#mp-indice">↑ Volver al índice</a>
+</section>
+<section class="manual-finish"><h3>¡Has llegado al final!</h3><p>Tu siguiente paso es aplicar lo aprendido en un proyecto propio y documentar qué mejoraste.</p><a class="manual-primary" href="#aprendizaje">Volver a la Biblioteca</a></section>
+</article></div></main>
+<footer class="manual-footer"><b>PIXEL FORGE</b><p>Imagina, aprende, experimenta y crea tu propio mundo digital.</p><small>Material educativo de consulta. Verifica requisitos, políticas y versiones en las fuentes oficiales.</small></footer>
+</section><section aria-label="Manual de streaming" class="pf-manual-view" data-pf-manual="ms" hidden="" id="manual-streaming">
+<header class="manual-topbar"><a class="manual-brand" href="#inicio"><span class="brand-cube">PF</span><span>PIXEL <b>FORGE</b></span></a><nav><a href="#aprendizaje">Biblioteca</a><a href="#manual-programacion">Programación</a><a href="#manual-streaming">Streaming</a></nav></header>
+<main class="manual-shell">
+<section class="manual-hero"><div><p class="manual-eyebrow">ANEXO EDUCATIVO · STREAMING</p><h2>Manual de streaming para principiantes</h2><p class="manual-subtitle">Aprende a transmitir en vivo, compartir tu contenido y construir tu propia comunidad desde cero.</p><p class="manual-description">Guía para preparar tu canal, equipo, conexión, OBS Studio, interacción, seguridad y primera transmisión.</p><div class="manual-meta"><span>12+/16 capítulos</span><span>Lectura y práctica por etapas</span><span>Nivel principiante</span></div></div><div aria-hidden="true" class="hero-emblem"><span>LIVE</span><i></i><i></i><i></i></div></section>
+<div class="manual-layout"><aside class="manual-sidebar" id="ms-indice"><div class="sidebar-heading"><span>CONTENIDO</span><small id="ms-progressText">0 de 16 completados</small></div><div class="progress-track"><span id="ms-progressBar"></span></div><label class="manual-search-label" for="ms-chapterSearch">Buscar capítulo</label><input class="manual-search" id="ms-chapterSearch" placeholder="Escribe para filtrar…" type="search"/> <nav class="chapter-nav"><a data-nav="1" href="#ms-capitulo-1"><span>01</span>Introducción al mundo del streaming</a><a data-nav="2" href="#ms-capitulo-2"><span>02</span>Plataformas de streaming</a><a data-nav="3" href="#ms-capitulo-3"><span>03</span>Equipo necesario</a><a data-nav="4" href="#ms-capitulo-4"><span>04</span>Conexión a internet</a><a data-nav="5" href="#ms-capitulo-5"><span>05</span>Configuración de una cuenta de streamer</a><a data-nav="6" href="#ms-capitulo-6"><span>06</span>Aprende a utilizar OBS Studio</a><a data-nav="7" href="#ms-capitulo-7"><span>07</span>Creación de una transmisión atractiva</a><a data-nav="8" href="#ms-capitulo-8"><span>08</span>Streaming desde consola y celular</a><a data-nav="9" href="#ms-capitulo-9"><span>09</span>Interacción con los espectadores</a><a data-nav="10" href="#ms-capitulo-10"><span>10</span>Cómo crecer como streamer</a><a data-nav="11" href="#ms-capitulo-11"><span>11</span>Seguridad, privacidad y derechos de autor</a><a data-nav="12" href="#ms-capitulo-12"><span>12</span>Problemas frecuentes y soluciones</a><a data-nav="13" href="#ms-capitulo-13"><span>13</span>Tu primera transmisión en vivo</a><a data-nav="14" href="#ms-capitulo-14"><span>14</span>Proyecto final: crea tu propio canal</a><a data-nav="15" href="#ms-capitulo-15"><span>15</span>Glosario de streaming</a><a data-nav="16" href="#ms-capitulo-16"><span>16</span>Recursos para continuar aprendiendo</a></nav><a class="sidebar-back" href="#aprendizaje">← Volver a la Biblioteca</a></aside>
+<article class="manual-content"><div class="reading-tools"><span>LECTURA GUIADA</span><button id="ms-resetProgress" type="button">Reiniciar progreso</button><button onclick="window.print()" type="button">Imprimir / Guardar PDF</button></div>
+<section class="manual-intro"><h3>Antes de comenzar</h3><p>Este material está dirigido a personas que empiezan desde cero. Avanza capítulo por capítulo, realiza las prácticas y adapta los ejemplos a tu proyecto. Los avances se guardan únicamente en este navegador; no se sincronizan con tu cuenta de Pixel Forge.</p><div class="tip"><b>Cómo usar este manual:</b> lee el concepto, realiza los pasos, prueba el resultado y marca el capítulo cuando termines. Los enlaces externos abren documentación de sus responsables.</div></section>
+<section class="manual-chapter" data-chapter="1" id="ms-capitulo-1">
+<div class="chapter-kicker">CAPÍTULO 01</div>
+<h3>Introducción al mundo del streaming</h3>
+<div class="chapter-body">
+<p>El streaming transmite audio y video por internet para que otras personas lo consuman mientras llega la señal. Un <b>streamer</b> es quien realiza la transmisión; el <b>chat</b> permite conversar; la <b>audiencia</b> son las personas que miran y la <b>comunidad</b> reúne a quienes participan de forma recurrente.</p>
+<h4>Formatos posibles</h4><ul><li>Gameplay y comentarios de videojuegos.</li><li>Tutoriales, clases y demostraciones.</li><li>Música, arte o procesos creativos, respetando derechos.</li><li>Charlas, entrevistas y eventos.</li><li>Contenido IRL o desde dispositivos móviles, con especial cuidado de la privacidad.</li></ul>
+<p>Una transmisión puede ser pública, privada o no listada según la plataforma y el tipo de evento. Antes de salir en vivo define el propósito, la audiencia, los límites personales y qué información nunca debe aparecer en pantalla.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="1" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="2" id="ms-capitulo-2">
+<div class="chapter-kicker">CAPÍTULO 02</div>
+<h3>Plataformas de streaming</h3>
+<div class="chapter-body">
+<p>Las plataformas cambian sus funciones, reglas y requisitos. Verifica la elegibilidad en la cuenta y la ayuda oficial antes de planear un directo; puede depender del país, edad, estado de la cuenta, historial y tipo de contenido.</p>
+<table><thead><tr><th>Plataforma</th><th>Enfoque</th><th>Ventajas</th><th>Limitaciones a comprobar</th></tr></thead><tbody><tr><td><b>Twitch</b></td><td>Directos, gaming y comunidades.</td><td>Herramientas de chat, moderación, categorías y canales en vivo.</td><td>Afiliación/monetización, música, reglas y acceso a funciones.</td></tr><tr><td><b>YouTube Live</b></td><td>Directos y contenido bajo demanda en un mismo canal.</td><td>Integración con videos, programación y archivo según configuración.</td><td>Verificación del canal, restricciones y requisitos de transmisión móvil.</td></tr><tr><td><b>TikTok LIVE</b></td><td>Directos verticales y descubrimiento móvil.</td><td>Formato móvil e interacción en tiempo real.</td><td>Edad, umbral local de seguidores y disponibilidad regional; varían.</td></tr><tr><td><b>Facebook Live</b></td><td>Comunidades, páginas y grupos.</td><td>Distribución dentro del ecosistema social.</td><td>Permisos de página/grupo, elegibilidad y cambios de producto.</td></tr><tr><td><b>Kick</b></td><td>Canales en vivo y chat.</td><td>Alternativa de streaming con panel de creador.</td><td>Requisitos de monetización, reglas y disponibilidad por región.</td></tr></tbody></table>
+<p>Compara facilidad de uso, audiencia que ya tienes, reglas de contenido, derechos de autor, accesibilidad, moderación y herramientas disponibles. No abras cuentas falsas para eludir restricciones.</p>
+<div class="resource-list"><a href="https://www.twitch.tv/" rel="noopener" target="_blank">Twitch</a> · <a href="https://www.youtube.com/live" rel="noopener" target="_blank">YouTube Live</a> · <a href="https://support.tiktok.com/" rel="noopener" target="_blank">Ayuda de TikTok</a> · <a href="https://www.facebook.com/live/producer" rel="noopener" target="_blank">Facebook Live Producer</a> · <a href="https://kick.com/" rel="noopener" target="_blank">Kick</a></div>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="2" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="3" id="ms-capitulo-3">
+<div class="chapter-kicker">CAPÍTULO 03</div>
+<h3>Equipo necesario</h3>
+<div class="chapter-body">
+<p>No necesitas comprar todo antes de empezar. Prioriza conexión estable, audio entendible y un equipo que pueda codificar sin sobrecalentarse.</p>
+<table><thead><tr><th>Nivel</th><th>Configuración orientativa</th><th>Uso</th></tr></thead><tbody><tr><td>Económico</td><td>Computadora o celular existente, audífonos con micrófono, luz ambiental frontal y soporte estable.</td><td>Pruebas, charla o directos sencillos.</td></tr><tr><td>Intermedio</td><td>PC con CPU/GPU compatible, micrófono USB, audífonos cerrados, cámara web y luz LED difusa.</td><td>Gameplay con escenas, cámara y fuentes.</td></tr><tr><td>Avanzado</td><td>Equipo dedicado o doble PC, micrófono XLR con interfaz, cámara, iluminación controlada, capturadora y red cableada.</td><td>Producción compleja con varias fuentes.</td></tr></tbody></table>
+<h4>Qué hace cada componente</h4><ul><li><b>CPU/GPU:</b> ejecutan juego y codificación; la carga depende del juego, resolución y encoder.</li><li><b>Micrófono:</b> capta voz; colócalo cerca y fuera del flujo directo de aire.</li><li><b>Audífonos:</b> evitan que el audio de altavoces vuelva al micrófono.</li><li><b>Cámara:</b> opcional; mejora presencia, pero exige iluminación.</li><li><b>Iluminación:</b> una luz suave frente al rostro suele mejorar más que una cámara costosa con poca luz.</li><li><b>Capturadora:</b> lleva video de consola/cámara al PC; comprueba compatibilidad y resolución.</li></ul>
+<p>Antes de comprar, confirma conexiones, compatibilidad del sistema, uso previsto y presupuesto. Prueba el equipo que ya tienes.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="3" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="4" id="ms-capitulo-4">
+<div class="chapter-kicker">CAPÍTULO 04</div>
+<h3>Conexión a internet</h3>
+<div class="chapter-body">
+<p>La <b>velocidad de subida</b> es la capacidad para enviar el video; la descarga es la capacidad para recibir datos. El <b>ping</b> mide el tiempo de ida y vuelta; la latencia es el retraso percibido; la pérdida de paquetes significa que parte de los datos no llega. Para transmitir importa especialmente la subida estable, no solo el valor máximo anunciado.</p>
+<h4>Cómo probar</h4><ol><li>Conecta la computadora por Ethernet cuando sea posible.</li><li>Detén descargas, copias en nube y otros streams de la red.</li><li>Ejecuta dos o tres pruebas en diferentes horarios con una herramienta de medición reconocida.</li><li>Registra subida, ping y variación entre pruebas.</li><li>Inicia una grabación o directo privado de prueba y observa pérdida de cuadros y salud de la transmisión.</li></ol>
+<p>Como regla práctica, reserva margen sobre el bitrate que configuraste: no uses toda la subida disponible. Si hay otras personas compartiendo conexión, reduce resolución o bitrate.</p>
+<h4>Referencia de bitrate H.264 publicada por YouTube</h4><p>La siguiente tabla reproduce los valores recomendados por YouTube para ingestión H.264; no es una tabla universal para todas las plataformas o codecs.</p>
+<table><thead><tr><th>Resolución / FPS</th><th>Mínimo H.264</th><th>Recomendado H.264</th></tr></thead><tbody><tr><td>720p30</td><td>3 Mbps</td><td>8 Mbps</td></tr><tr><td>720p60</td><td>3 Mbps</td><td>8 Mbps</td></tr><tr><td>1080p30</td><td>5 Mbps</td><td>14 Mbps</td></tr><tr><td>1080p60</td><td>6 Mbps</td><td>17 Mbps</td></tr><tr><td>1440p30</td><td>7 Mbps</td><td>21 Mbps</td></tr><tr><td>1440p60</td><td>8 Mbps</td><td>34 Mbps</td></tr></tbody></table>
+<p>Fuente y parámetros completos: <a href="https://support.google.com/youtube/answer/2853702?hl=es" rel="noopener" target="_blank">configuración de codificador, bitrate y resolución de YouTube</a>. Usa la guía específica de tu plataforma y codec; prueba antes de emitir.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="4" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="5" id="ms-capitulo-5">
+<div class="chapter-kicker">CAPÍTULO 05</div>
+<h3>Configuración de una cuenta de streamer</h3>
+<div class="chapter-body">
+<ol><li>Entra al sitio o aplicación oficial de la plataforma y crea tu cuenta con un correo que controles.</li><li>Elige un nombre público que no revele datos privados ni suplante a otra persona.</li><li>Completa foto, portada y descripción sin publicar dirección, escuela, teléfono o datos de terceros.</li><li>Activa verificación en dos pasos y guarda los códigos de recuperación fuera del equipo de transmisión.</li><li>Revisa privacidad, filtros de chat, palabras bloqueadas, permisos de moderadores y opciones de bloqueo.</li><li>Configura la categoría y los datos de cada emisión con títulos claros y adecuados.</li></ol>
+<div class="warning"><b>Seguridad:</b> no compartas contraseña, código de autenticación ni clave de transmisión. El personal de soporte legítimo no necesita que publiques esos secretos en un chat.</div>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="5" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="6" id="ms-capitulo-6">
+<div class="chapter-kicker">CAPÍTULO 06</div>
+<h3>Aprende a utilizar OBS Studio</h3>
+<div class="chapter-body">
+<p>OBS Studio es software gratuito y de código abierto para grabar y transmitir. Descárgalo únicamente desde <a href="https://obsproject.com/" rel="noopener" target="_blank">obsproject.com</a>. La ubicación exacta de algunos menús puede variar entre versiones.</p>
+<h4>Configuración paso a paso</h4><ol><li><b>Descarga e instalación:</b> selecciona el instalador de tu sistema operativo desde el sitio oficial, ejecútalo y abre OBS.</li><li><b>Asistente inicial:</b> permite que el asistente de configuración automática evalúe transmisión o grabación; úsalo como punto de partida, no como garantía.</li><li><b>Interfaz:</b> identifica Escenas, Fuentes, Mezclador de audio, Transiciones y Controles.</li><li><b>Escena:</b> crea una llamada <code>Juego</code>. Las escenas son composiciones distintas.</li><li><b>Fuentes:</b> agrega Captura de juego o Captura de ventana; agrega Dispositivo de captura de video solo si usarás cámara. Coloca y redimensiona cada fuente en la vista previa.</li><li><b>Micrófono:</b> en Ajustes &gt; Audio selecciona el dispositivo correcto. Habla y observa que el medidor responda sin llegar constantemente al rojo.</li><li><b>Audio de escritorio:</b> selecciona la salida que deseas capturar o agrega captura de audio por aplicación cuando esté disponible. Usa audífonos para reducir eco.</li><li><b>Video:</b> en Ajustes &gt; Video define resolución base del lienzo y resolución de salida. Empieza con 1280×720 o 1920×1080 según equipo/red y 30 FPS; aumenta solo si la prueba es estable.</li><li><b>Bitrate y codificador:</b> en Ajustes &gt; Salida &gt; Emisión usa CBR cuando la plataforma lo recomiende. Elige encoder de hardware compatible si ofrece buena estabilidad; de lo contrario prueba software. No copies valores de otra plataforma sin verificar.</li><li><b>Conexión:</b> desde Ajustes &gt; Emisión elige plataforma/servidor e inicia sesión mediante el flujo oficial o configura servidor y clave de emisión.</li><li><b>Clave:</b> trátala como contraseña. No la pongas en capturas, chat, repositorios ni archivos públicos. Si se filtra, revócala y genera otra desde la plataforma.</li><li><b>Prueba:</b> realiza una grabación local y una emisión privada/no listada si la plataforma lo permite. Reproduce el archivo y comprueba audio, imagen, sincronía y legibilidad.</li></ol>
+<h4>Filtros de audio</h4><ul><li><b>Supresión de ruido:</b> reduce sonidos constantes de fondo; demasiada intensidad puede deformar la voz.</li><li><b>Compresor:</b> reduce diferencias entre voz baja y picos altos; no sustituye hablar a distancia constante.</li><li><b>Limitador:</b> fija un techo para evitar picos excesivos. Ajusta con una prueba real y evita saturación.</li></ul>
+<div class="tip"><b>Orden de trabajo:</b> primero coloca el micrófono y ajusta su nivel; después aplica filtros suaves uno por uno y escucha una grabación. No agregues filtros por rutina si no resuelven un problema.</div>
+<p>Guía y manual oficial: <a href="https://obsproject.com/kb/" rel="noopener" target="_blank">OBS Knowledge Base</a>.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="6" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="7" id="ms-capitulo-7">
+<div class="chapter-kicker">CAPÍTULO 07</div>
+<h3>Creación de una transmisión atractiva</h3>
+<div class="chapter-body">
+<p>Organiza escenas para que el espectador entienda qué está ocurriendo. No necesitas muchos efectos: prioriza lectura, equilibrio visual y transiciones breves.</p>
+<div class="scene-flow"><div>INICIO<br/><small>Horario y reglas</small></div><span>→</span><div>EN VIVO<br/><small>Juego + voz + cámara opcional</small></div><span>→</span><div>DESCANSO<br/><small>Pausa y aviso</small></div><span>→</span><div>DESPEDIDA<br/><small>Gracias y cierre</small></div></div>
+<ul><li><b>Pantalla de inicio:</b> informa que comenzarás pronto; no dejes datos sensibles.</li><li><b>Escena principal:</b> deja el juego como foco; cámara y chat no deben tapar información importante.</li><li><b>Descanso:</b> silencia fuentes que no deban sonar y muestra un aviso.</li><li><b>Despedida:</b> comunica que terminó y apaga la transmisión desde la plataforma/OBS.</li><li><b>Alertas y overlays:</b> usa recursos ligeros, de fuentes confiables y con derechos claros.</li></ul>
+<p>Para videojuegos puedes iniciar con tres escenas: <code>Inicio</code>, <code>Juego</code> y <code>Enseguida volvemos</code>. Duplica la escena solo cuando necesites una composición realmente diferente.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="7" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="8" id="ms-capitulo-8">
+<div class="chapter-kicker">CAPÍTULO 08</div>
+<h3>Streaming desde consola y celular</h3>
+<div class="chapter-body">
+<p>Las opciones dependen del modelo, versión del sistema, aplicación, región y elegibilidad de tu cuenta. Antes de seguir un tutorial, confirma que corresponda a tu consola o dispositivo exacto.</p>
+<h4>PlayStation y Xbox</h4><ol><li>Actualiza el sistema y conecta la cuenta de la plataforma desde los ajustes oficiales.</li><li>Revisa qué servicios de transmisión están disponibles en tu región y cuenta.</li><li>Configura título, micrófono, cámara opcional y privacidad antes de comenzar.</li><li>Haz una prueba de audio y evita mostrar mensajes, nombres reales o notificaciones privadas.</li><li>Para overlays, escenas avanzadas o capturas de otras fuentes, quizá necesites una capturadora y computadora; verifica la compatibilidad HDMI/HDCP y el software antes de comprar.</li></ol>
+<h4>Celular</h4><ol><li>Instala la aplicación oficial desde la tienda autorizada.</li><li>Revisa permisos de cámara, micrófono y notificaciones; concede solo los necesarios.</li><li>Usa soporte estable, orientación adecuada e iluminación frontal.</li><li>Activa modo No molestar y oculta notificaciones personales.</li><li>Comprueba batería, temperatura, datos móviles y Wi-Fi antes del directo.</li></ol>
+<p>No se promete que toda cuenta pueda transmitir desde cualquier dispositivo: algunas plataformas aplican requisitos de acceso y restricciones locales. Usa las páginas oficiales de soporte antes de planear una emisión.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="8" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="9" id="ms-capitulo-9">
+<div class="chapter-kicker">CAPÍTULO 09</div>
+<h3>Interacción con los espectadores</h3>
+<div class="chapter-body">
+<p>La interacción construye un espacio amable y seguro. Da la bienvenida sin exigir que alguien revele información personal; responde preguntas con calma y reconoce que puedes no saber una respuesta.</p>
+<h4>Frases de ejemplo</h4><ul><li>Bienvenida: “¡Hola! Gracias por pasar. Hoy vamos a jugar y conversar un rato”.</li><li>Pregunta: “¿Qué estrategia probarían en esta parte?”.</li><li>Pausa: “Voy a tomar un minuto; regreso enseguida”.</li><li>Límite: “No compartamos datos personales ni enlaces sospechosos en el chat”.</li><li>Despedida: “Gracias por acompañarme. Nos vemos en la próxima transmisión”.</li></ul>
+<h4>Moderación</h4><ul><li>Escribe reglas claras y visibles.</li><li>Define qué comportamientos ameritan advertencia, silencio o bloqueo.</li><li>Asigna moderadores de confianza y explica sus permisos.</li><li>No respondas a provocaciones que busquen exponer datos o acosar.</li><li>Reporta conductas graves usando las herramientas oficiales.</li></ul>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="9" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="10" id="ms-capitulo-10">
+<div class="chapter-kicker">CAPÍTULO 10</div>
+<h3>Cómo crecer como streamer</h3>
+<div class="chapter-body">
+<p>El crecimiento no está garantizado y no depende de una sola configuración. La constancia sostenible, una propuesta reconocible y la calidad de interacción pueden ayudarte a aprender qué contenido funciona.</p>
+<ol><li><b>Identidad:</b> define temática, tono y una descripción honesta del canal.</li><li><b>Audiencia:</b> piensa a quién va dirigido y qué valor recibirá.</li><li><b>Calendario:</b> elige horarios que puedas mantener sin afectar descanso, estudio o trabajo.</li><li><b>Títulos y miniaturas:</b> explica el contenido sin engañar ni prometer algo que no aparece.</li><li><b>Clips:</b> selecciona momentos útiles o entretenidos y revisa derechos de música, imágenes y participantes.</li><li><b>Redes:</b> reutiliza fragmentos adaptados a cada formato y respeta normas de cada servicio.</li><li><b>Estadísticas:</b> observa retención, interacción y fuentes de tráfico como señales, no como valoración personal.</li></ol>
+<p>Evita comprar seguidores, bots, interacciones falsas o pagar por promesas de crecimiento garantizado. Prueba un cambio cada vez y registra resultados durante un periodo razonable.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="10" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="11" id="ms-capitulo-11">
+<div class="chapter-kicker">CAPÍTULO 11</div>
+<h3>Seguridad, privacidad y derechos de autor</h3>
+<div class="chapter-body">
+<ul><li><b>Cuenta:</b> contraseña única, autenticación multifactor y correo de recuperación protegido.</li><li><b>Datos:</b> oculta notificaciones, direcciones, documentos, matrículas, geolocalización y nombres de terceros sin consentimiento.</li><li><b>Enlaces:</b> no abras archivos o enlaces de usuarios desconocidos ni entregues códigos de acceso.</li><li><b>Moderación:</b> configura filtros, bloqueos y reglas; conserva pruebas de incidentes graves sin exponerlas públicamente.</li><li><b>Música:</b> usa música propia, licenciada para streaming o con permiso claro para el uso previsto. “Libre de regalías” no significa automáticamente libre de restricciones.</li><li><b>Video y juegos:</b> revisa políticas de contenido del titular, avisos de spoilers y restricciones de retransmisión.</li><li><b>Personas:</b> pide consentimiento antes de mostrar o grabar a terceros, especialmente menores.</li></ul>
+<div class="warning"><b>Clave de emisión:</b> nunca publiques la clave, token de plataforma, QR de inicio de sesión ni capturas del panel que los revelen. Si sospechas que se filtró, restablécela inmediatamente.</div>
+<p>Consulta los términos de la plataforma y las licencias originales de cada recurso. Este manual es educativo y no sustituye asesoría legal.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="11" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="12" id="ms-capitulo-12">
+<div class="chapter-kicker">CAPÍTULO 12</div>
+<h3>Problemas frecuentes y soluciones</h3>
+<div class="chapter-body">
+<table><thead><tr><th>Problema</th><th>Causa probable</th><th>Comprobación y solución</th></tr></thead><tbody>
+<tr><td>Micrófono sin sonido</td><td>Dispositivo incorrecto, silencio o permisos.</td><td>Selecciona el micrófono correcto, revisa mute, nivel del sistema y medidor OBS; graba una prueba.</td></tr>
+<tr><td>Pantalla negra</td><td>Fuente equivocada, permiso, GPU distinta o incompatibilidad de captura.</td><td>Prueba Captura de ventana/juego, abre la aplicación, revisa permisos y guía de OBS para tu sistema.</td></tr>
+<tr><td>Captura no aparece</td><td>Entrada o capturadora sin señal.</td><td>Comprueba alimentación, cable, entrada HDMI, resolución/FPS y compatibilidad del dispositivo.</td></tr>
+<tr><td>Eco</td><td>Audio del altavoz entra al micrófono o hay dos fuentes duplicadas.</td><td>Usa audífonos, silencia la fuente duplicada y revisa monitoreo de audio.</td></tr>
+<tr><td>Desincronización</td><td>Retardo distinto entre fuentes de audio y video.</td><td>Haz grabación local; ajusta sincronización de fuente en OBS gradualmente y vuelve a escuchar.</td></tr>
+<tr><td>Congelamiento / cuadros perdidos</td><td>CPU/GPU saturada, red inestable o bitrate elevado.</td><td>Revisa estadísticas de OBS; baja resolución/FPS/bitrate, limita FPS del juego y cierra procesos.</td></tr>
+<tr><td>Retraso alto</td><td>Modo de latencia, red o procesamiento de plataforma.</td><td>Revisa ajustes de latencia de la plataforma y estabilidad de subida; no todos los modos están disponibles.</td></tr>
+<tr><td>Calidad baja</td><td>Bitrate insuficiente, escalado o movimiento complejo.</td><td>Compara bitrate/resolución admitidos por la plataforma y prueba una configuración menor pero estable.</td></tr>
+<tr><td>Desconexiones</td><td>Wi-Fi débil, router, ISP o servidor de ingestión.</td><td>Prueba Ethernet, cambia servidor si la plataforma lo permite y contacta al proveedor si persiste.</td></tr>
+<tr><td>Consumo excesivo</td><td>Juego y codificador compiten por recursos.</td><td>Usa encoder de hardware si es compatible, limita FPS, baja calidad y cierra programas innecesarios.</td></tr>
+</tbody></table>
+<p>Diagnostica una causa a la vez. Guarda el registro de OBS si necesitas solicitar ayuda y elimina antes cualquier dato privado.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="12" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="13" id="ms-capitulo-13">
+<div class="chapter-kicker">CAPÍTULO 13</div>
+<h3>Tu primera transmisión en vivo</h3>
+<div class="chapter-body">
+<h4>Antes de salir</h4><ul class="checklist"><li>Cuenta segura y permisos de transmisión confirmados.</li><li>Título, categoría y privacidad revisados.</li><li>Micrófono y audífonos probados.</li><li>Escenas de inicio, directo y descanso preparadas.</li><li>Internet probado; preferencia por cable Ethernet.</li><li>Notificaciones privadas desactivadas.</li><li>Fuentes visuales y música autorizadas.</li><li>Moderador o reglas de chat definidos, si aplica.</li><li>Grabación local de prueba revisada.</li></ul>
+<h4>Durante el directo</h4><ol><li>Inicia la escena de espera y confirma la señal.</li><li>Inicia emisión desde OBS o desde el dispositivo según tu flujo.</li><li>Revisa la vista previa/salud de transmisión de la plataforma.</li><li>Saluda, explica el contenido y mantén el ritmo.</li><li>Observa el chat sin mostrar mensajes privados ni abrir enlaces sospechosos.</li><li>Si hay un problema técnico, pausa o muestra una escena de descanso y corrige.</li></ol>
+<h4>Al terminar</h4><ol><li>Agradece y comunica el cierre.</li><li>Detén la transmisión en el orden recomendado por la plataforma.</li><li>Confirma que terminó; detén la grabación local si está activa.</li><li>Revisa el archivo antes de publicarlo y elimina datos sensibles.</li><li>Anota una mejora concreta para la siguiente sesión.</li></ol>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="13" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="14" id="ms-capitulo-14">
+<div class="chapter-kicker">CAPÍTULO 14</div>
+<h3>Proyecto final: crea tu propio canal</h3>
+<div class="chapter-body">
+<p>Diseña un canal de prueba y realiza una emisión privada/no listada cuando el servicio lo permita, o una grabación local si aún no tienes permiso para emitir.</p>
+<h4>Entregables</h4><ol><li>Nombre, tema, descripción y público al que va dirigido.</li><li>Plataforma seleccionada y motivo.</li><li>Imagen de perfil/portada creada con recursos propios o autorizados.</li><li>Escenas: inicio, principal, descanso y despedida.</li><li>Prueba de micrófono, audio de escritorio, video y conexión.</li><li>Grabación o enlace de prueba que no exponga información privada.</li><li>Reflexión: qué funcionó, qué falló y qué cambiarás.</li></ol>
+<h4>Criterios de evaluación</h4><table><thead><tr><th>Criterio</th><th>Ponderación</th></tr></thead><tbody><tr><td>Configuración técnica y estabilidad</td><td>25 %</td></tr><tr><td>Audio claro y balanceado</td><td>20 %</td></tr><tr><td>Organización de escenas y legibilidad</td><td>20 %</td></tr><tr><td>Seguridad, privacidad y derechos</td><td>20 %</td></tr><tr><td>Interacción y reflexión</td><td>15 %</td></tr></tbody></table>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="14" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="15" id="ms-capitulo-15">
+<div class="chapter-kicker">CAPÍTULO 15</div>
+<h3>Glosario de streaming</h3>
+<div class="chapter-body">
+<dl class="glossary"><dt>Bitrate</dt><dd>Cantidad de datos transmitidos por segundo; influye en calidad y ancho de banda.</dd><dt>Chat</dt><dd>Canal de mensajes de quienes miran el directo.</dd><dt>Codificador</dt><dd>Software o hardware que comprime audio y video para transmitir.</dd><dt>Capturadora</dt><dd>Dispositivo que recibe una señal de video externa para grabarla o transmitirla.</dd><dt>Escena</dt><dd>Composición de fuentes en OBS.</dd><dt>Fuente</dt><dd>Elemento de una escena: juego, ventana, cámara, imagen o audio.</dd><dt>FPS</dt><dd>Cuadros por segundo; indica cuántas imágenes se muestran en un segundo.</dd><dt>Latencia</dt><dd>Retraso entre la acción y lo que recibe el espectador.</dd><dt>Moderador</dt><dd>Persona con permisos para ayudar a mantener las reglas del chat.</dd><dt>OBS</dt><dd>Open Broadcaster Software, aplicación de grabación y streaming.</dd><dt>Overlay</dt><dd>Gráfico superpuesto al contenido, como marco, alertas o panel.</dd><dt>Ping</dt><dd>Tiempo de ida y vuelta de un paquete de red.</dd><dt>Resolución</dt><dd>Dimensiones de imagen, por ejemplo 1280 × 720.</dd><dt>RTMP/RTMPS</dt><dd>Protocolos de ingestión de video; RTMPS cifra la conexión.</dd><dt>VOD</dt><dd>Video bajo demanda, grabación disponible después del directo si la plataforma la conserva.</dd><dt>CBR</dt><dd>Modo de codificación con bitrate constante.</dd></dl>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="15" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section><section class="manual-chapter" data-chapter="16" id="ms-capitulo-16">
+<div class="chapter-kicker">CAPÍTULO 16</div>
+<h3>Recursos para continuar aprendiendo</h3>
+<div class="chapter-body">
+<ul class="resource-list"><li><a href="https://obsproject.com/" rel="noopener" target="_blank">OBS Studio</a> — descarga, guía y base de conocimiento.</li><li><a href="https://www.twitch.tv/creatorcamp/" rel="noopener" target="_blank">Twitch Creator Camp</a> — recursos para creadores.</li><li><a href="https://support.google.com/youtube/answer/2474026?hl=es" rel="noopener" target="_blank">Ayuda de YouTube: crear una emisión en directo</a>.</li><li><a href="https://support.google.com/youtube/answer/2853702?hl=es" rel="noopener" target="_blank">YouTube: configuración de codificador, bitrate y resolución</a>.</li><li><a href="https://support.tiktok.com/" rel="noopener" target="_blank">Centro de ayuda de TikTok</a>.</li><li><a href="https://www.facebook.com/business/help" rel="noopener" target="_blank">Meta Business Help Center</a>.</li><li><a href="https://help.kick.com/" rel="noopener" target="_blank">Centro de ayuda de Kick</a>.</li><li><a href="https://streamelements.com/" rel="noopener" target="_blank">StreamElements</a> — herramientas de producción; revisa planes y permisos.</li><li><a href="https://www.canva.com/" rel="noopener" target="_blank">Canva</a> — diseño gráfico; revisa licencias de elementos.</li><li><a href="https://www.audacityteam.org/" rel="noopener" target="_blank">Audacity</a> — edición de audio.</li><li><a href="https://www.blackmagicdesign.com/products/davinciresolve" rel="noopener" target="_blank">DaVinci Resolve</a> — edición de video; existen versiones y requisitos distintos.</li></ul>
+<p>Consulta los requisitos y condiciones directamente antes de instalar o transmitir. Los servicios pueden cambiar sus nombres de menú, disponibilidad, planes y políticas.</p>
+</div>
+<label class="chapter-complete"><input class="chapter-check" data-check="16" type="checkbox"/> Marcar capítulo como completado</label>
+<a class="back-index" href="#ms-indice">↑ Volver al índice</a>
+</section>
+<section class="manual-finish"><h3>¡Has llegado al final!</h3><p>Tu siguiente paso es aplicar lo aprendido en un proyecto propio y documentar qué mejoraste.</p><a class="manual-primary" href="#aprendizaje">Volver a la Biblioteca</a></section>
+</article></div></main>
+<footer class="manual-footer"><b>PIXEL FORGE</b><p>Imagina, aprende, experimenta y crea tu propio mundo digital.</p><small>Material educativo de consulta. Verifica requisitos, políticas y versiones en las fuentes oficiales.</small></footer>
+</section><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="./script.js"></script></body>
+</html>
